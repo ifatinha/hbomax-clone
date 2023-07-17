@@ -1,0 +1,38 @@
+.btn-default {
+    border-radius : 800px;
+    border        : 1.6px solid transparent;
+    color         : var(--hm-white-100);
+    display       : inline-block;
+    font-size     : var(--hm-font-08);
+    font-weight   : 700;
+    letter-spacing: 1.2px;
+    line-height   : 20px;
+    padding       : 3px 10px;
+    text-align    : center;
+    text-transform: uppercase;
+    transition    : var(--hm-transition);
+}
+
+@media screen and (min-width: 768px) {
+    .btn-default {
+        font-size: var(--hm-font-12);
+        padding  : 6px 24px;
+    }
+}
+
+.btn-default:hover {
+    color: var(--hm-link-houver);
+}
+
+.btn-white:hover {
+    background-color: var(--hm-gray-100);
+    border-color    : var(--hm-border-color);
+}
+
+.btn-purple {
+    background-color: var(--hm-purple);
+}
+
+.btn-purple:hover {
+    background-color: var(--hm-white);
+}

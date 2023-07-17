@@ -1,0 +1,30 @@
+.header {
+    align-items     : center;
+    background-color: rgba(var(--hm-black-rgb), 0.3);
+    display         : var(--hm-display-flex);
+    justify-content : space-between;
+    padding         : 8px 16px;
+}
+
+.header-logo {
+    height: 30px;
+    width : 90px;
+}
+
+@media screen and (min-width: 768px) {
+    .header-logo {
+        height: 30px;
+        width : 160px;
+    }
+}
+
+.header-logo img {
+    height    : 100%;
+    object-fit: contain;
+    width     : 100%;
+}
+
+.header-menu {
+    display: var(--hm-display-flex);
+    gap    : 4px;
+}

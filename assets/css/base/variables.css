@@ -1,0 +1,20 @@
+@import "../../fonts/fontface.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+    --hm-bg-color    : #030328;
+    --hm-border-color: #f8f9fa;
+    --hm-purple      : #b535f6;
+    --hm-white       : #ffffff;
+    --hm-white-100   : #f8f9fa;
+    --hm-gray-100    : #f9fafb;
+    --hm-black-rgb   : 0, 0, 0;
+    --hm-link-houver : #0056b3;
+
+    --hm-display-flex: flex;
+
+    --hm-font-primary: Gilroy, 'Noto Sans', 'Roboto', sans-serif;
+    --hm-font-12     : 0.75rem;
+    --hm-font-08     : 0.5rem;
+    --hm-transition  : all 0.5s ease 0s;
+}
