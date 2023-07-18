@@ -39,15 +39,30 @@
     text-transform: uppercase;
 }
 
-.main-poster p:not(span, p:last-of-type) {
-    font-size  : var(--hm-font-40);
-    font-weight: 700;
-    line-height: 50px;
+.main-poster p:not(span, p:last-of-type),
+.main-poster p strong {
+    font-size     : var(--hm-font-40);
+    font-weight   : 700;
+    line-height   : 50px;
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
-    .main-poster p:not(span, p:last-of-type) {
+
+    .main-poster p:not(span, p:last-of-type),
+    .main-poster p strong {
         font-size  : var(--hm-font-60);
         line-height: 60px;
     }
+}
+
+.poster-button {
+    margin-top: 40px;
+    width     : 100%;
+}
+
+.poster-button p {
+    font-size  : var(--hm-font-12);
+    font-weight: 300;
+    line-height: 16px;
 }

@@ -1,26 +1,29 @@
 .btn-default {
     border-radius : 800px;
-    border        : 1.6px solid transparent;
     color         : var(--hm-white-100);
     display       : inline-block;
-    font-size     : var(--hm-font-12);
     font-weight   : 700;
     letter-spacing: 1.2px;
     line-height   : 20px;
-    padding       : 4px 10px;
     text-align    : center;
     text-transform: uppercase;
     transition    : var(--hm-transition);
 }
 
+.btn-header {
+    border   : 1.6px solid transparent;
+    font-size: var(--hm-font-12);
+    padding  : 4px 10px;
+}
+
 @media screen and (min-width: 768px) {
-    .btn-default {
+    .btn-header {
         font-size: var(--hm-font-14);
         padding  : 6px 24px;
     }
 }
 
-.btn-default:hover {
+.btn-header:hover {
     color: var(--hm-link-houver);
 }
 
@@ -35,4 +38,17 @@
 
 .btn-purple:hover {
     background-color: var(--hm-white);
+}
+
+.btn-main {
+    background    : linear-gradient(345deg, rgb(73, 12, 176) 0%, rgb(155, 52, 239) 33%, rgba(255, 255, 255, 0) 66%, rgba(255, 255, 255, 0) 100%) 99% 50% / 400% 400%;
+    border        : 2px solid transparent;
+    letter-spacing: 1.6px;
+    padding       : 8px 24px;
+    overflow      : hidden;
+}
+
+.btn-main:hover {
+    background-position: 1% 50%;
+    border-color       : rgb(198, 0, 255);
 }
