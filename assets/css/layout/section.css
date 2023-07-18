@@ -1,0 +1,26 @@
+section {
+    align-items        : center;
+    background-position: center center;
+    background-size    : cover;
+    display            : var(--hm-display-flex);
+    flex-direction     : column;
+    justify-content    : center;
+    min-height         : 100%;
+    padding            : 0 2%;
+    text-align         : center;
+    width              : 100%;
+}
+
+.section-title {
+    font-size  : var(--hm-font-24);
+    font-weight: 500;
+    line-height: 38px;
+    margin     : 8px 0 4px;
+    text-align : center;
+}
+
+@media screen and (min-width: 768px) {
+    .section-title {
+        font-size: var(--hm-font-32);
+    }
+}

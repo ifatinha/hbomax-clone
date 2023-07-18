@@ -1,0 +1,46 @@
+.plan {
+    background-image: url("../../images/plans_background.png");
+}
+
+.plan>p {
+    font-size     : var(--hm-font-12);
+    font-weight   : 700;
+    letter-spacing: 1.2px;
+    line-height   : 20px;
+    margin        : 60px 0 24px;
+    text-transform: uppercase;
+}
+
+.plan-list {
+    display        : var(--hm-display-flex);
+    flex-wrap      : wrap;
+    gap            : 20px;
+    justify-content: center;
+}
+
+.plan-list ul {
+    flex            : 0 0 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .plan-list ul {
+        flex: 0 0 30%;
+    }
+}
+
+.plan-list ul li {
+    font-size  : var(--hm-font-16);
+    font-weight: 200;
+}
+
+.plan-list ul li::before {
+    background   : linear-gradient(179.97deg, #b908f6 1.39%, #5b16bd 99.97%);
+    border-radius: 50%;
+    content      : "";
+    display      : inline-block;
+    font-weight  : bolder;
+    height       : 5px;
+    margin       : 2px 5px;
+    width        : 5px;
+
+}
