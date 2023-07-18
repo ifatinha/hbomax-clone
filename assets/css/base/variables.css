@@ -14,8 +14,9 @@
     --hm-display-flex: flex;
 
     --hm-font-primary: Gilroy, 'Noto Sans', 'Roboto', sans-serif;
+    --hm-font-60     : 3.75rem;
+    --hm-font-40     : 2.5rem;
     --hm-font-14     : 0.875rem;
     --hm-font-12     : 0.75rem;
-    --hm-font-08     : 0.625rem;
     --hm-transition  : all 0.5s ease 0s;
 }

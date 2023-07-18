@@ -1,0 +1,53 @@
+.main {
+    align-items    : center;
+    background     : url("../../images/background-mob.avif") no-repeat center;
+    background-size: cover;
+    display        : var(--hm-display-flex);
+    flex-direction : column;
+    height         : 60%;
+    justify-content: center;
+    width          : 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        background: transparent;
+        height    : 100%;
+    }
+}
+
+.main-poster {
+    max-width : 900px;
+    padding   : 16px;
+    text-align: center;
+    width     : 100%;
+}
+
+.main-poster span {
+    font-weight: 300;
+    line-height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .main-poster span {
+        font-size  : var(--hm-font-40);
+        line-height: 64px;
+    }
+}
+
+.main-poster>span {
+    text-transform: uppercase;
+}
+
+.main-poster p:not(span, p:last-of-type) {
+    font-size  : var(--hm-font-40);
+    font-weight: 700;
+    line-height: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .main-poster p:not(span, p:last-of-type) {
+        font-size  : var(--hm-font-60);
+        line-height: 60px;
+    }
+}

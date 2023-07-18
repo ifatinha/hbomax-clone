@@ -7,7 +7,7 @@
     font-weight   : 700;
     letter-spacing: 1.2px;
     line-height   : 20px;
-    padding       : 3px 10px;
+    padding       : 4px 10px;
     text-align    : center;
     text-transform: uppercase;
     transition    : var(--hm-transition);
