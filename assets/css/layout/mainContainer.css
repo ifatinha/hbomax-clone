@@ -89,6 +89,17 @@
         z-index : -2;
     }
 
+    .main-video::before {
+        background: linear-gradient(180deg, rgba(3, 3, 40, 0) 0%, rgba(3, 3, 40, 1) 100%);
+        bottom    : 0;
+        content   : "";
+        height    : 50%;
+        left      : 0;
+        position  : absolute;
+        width     : 100%;
+        z-index   : 1;
+    }
+
     .main-video video {
         height    : 100%;
         left      : 0;
