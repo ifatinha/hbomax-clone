@@ -3,7 +3,7 @@
     border        : 1.6px solid transparent;
     color         : var(--hm-white-100);
     display       : inline-block;
-    font-size     : var(--hm-font-08);
+    font-size     : var(--hm-font-12);
     font-weight   : 700;
     letter-spacing: 1.2px;
     line-height   : 20px;
@@ -15,7 +15,7 @@
 
 @media screen and (min-width: 768px) {
     .btn-default {
-        font-size: var(--hm-font-12);
+        font-size: var(--hm-font-14);
         padding  : 6px 24px;
     }
 }
