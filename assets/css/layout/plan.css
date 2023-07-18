@@ -19,7 +19,7 @@
 }
 
 .plan-list ul {
-    flex            : 0 0 100%;
+    flex: 0 0 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -42,5 +42,77 @@
     height       : 5px;
     margin       : 2px 5px;
     width        : 5px;
+}
 
+.plan-cards {
+    display        : var(--hm-display-flex);
+    flex-wrap      : wrap;
+    gap            : 40px;
+    justify-content: center;
+    margin         : 60px 0;
+    width          : 100%;
+}
+
+.plan-card_item {
+    background     : linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius  : 8px;
+    display        : var(--hm-display-flex);
+    flex-direction : column;
+    flex-basis     : 100%;
+    justify-content: space-between;
+    text-align     : center;
+    padding        : 25px;
+}
+
+@media screen and (min-width: 998px) {
+    .plan-card_item {
+        flex: 0 0 350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .plan-card_item:nth-child(1) {
+        order: 2;
+    }
+
+    .plan-card_item:nth-child(2) {
+        order: 1;
+    }
+
+    .plan-card_item:nth-child(3) {
+        order: 3;
+    }
+}
+
+.plan-card_desc {
+    flex-grow    : 1;
+    margin-bottom: 40px;
+}
+
+.plan-card_desc span {
+    font-size  : var(--hm-font-32);
+    font-weight: 700;
+    line-height: 38px;
+    margin-top : 5%;
+}
+
+.plan-card_desc .plan-price {
+    font-size    : var(--hm-font-50);
+    font-weight  : 700;
+    line-height  : 60px;
+    margin-bottom: 20px;
+}
+
+.plan-card_desc p+p {
+    font-size  : var(--hm-font-16);
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.plan-card_item .btn-main {
+    font-size  : var(--hm-font-14);
+    white-space: nowrap;
+    margin     : 0 auto;
+    max-width  : 300px;
+    width      : 100%;
 }

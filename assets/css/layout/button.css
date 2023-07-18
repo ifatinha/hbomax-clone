@@ -41,11 +41,13 @@
 }
 
 .btn-main {
-    background    : linear-gradient(345deg, rgb(73, 12, 176) 0%, rgb(155, 52, 239) 33%, rgba(255, 255, 255, 0) 66%, rgba(255, 255, 255, 0) 100%) 99% 50% / 400% 400%;
-    border        : 2px solid transparent;
-    letter-spacing: 1.6px;
-    padding       : 8px 24px;
-    overflow      : hidden;
+    background         : linear-gradient(345deg, rgb(73, 12, 176) 0%, rgb(155, 52, 239) 33%, rgba(255, 255, 255, 0) 66%, rgba(255, 255, 255, 0) 100%) 99% 50% / 400% 400%;
+    background-position: 99% 50%;
+    background-size    : 400% 400%;
+    border             : 2px solid transparent;
+    letter-spacing     : 1.6px;
+    padding            : 8px 24px;
+    overflow           : hidden;
 }
 
 .btn-main:hover {
