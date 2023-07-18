@@ -1,11 +1,10 @@
 .main {
     align-items    : center;
-    background     : url("../../images/background-mob.avif") no-repeat center;
-    background-size: cover;
     display        : var(--hm-display-flex);
     flex-direction : column;
     height         : 60%;
     justify-content: center;
+    position       : relative;
     width          : 100%;
 }
 
@@ -17,10 +16,19 @@
 }
 
 .main-poster {
-    max-width : 900px;
-    padding   : 16px;
-    text-align: center;
-    width     : 100%;
+    background     : url("../../images/background-mob.avif") no-repeat center;
+    background-size: cover;
+    max-width      : 900px;
+    padding        : 16px;
+    text-align     : center;
+    width          : 100%;
+    z-index        : 9998;
+}
+
+@media screen and (min-width: 768px) {
+    .main-poster {
+        background: transparent;
+    }
 }
 
 .main-poster span {
@@ -65,4 +73,28 @@
     font-size  : var(--hm-font-12);
     font-weight: 300;
     line-height: 16px;
+}
+
+.main-video {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .main-video {
+        display : block;
+        height  : 100%;
+        overflow: hidden;
+        position: absolute;
+        width   : 100%;
+        z-index : -2;
+    }
+
+    .main-video video {
+        height    : 100%;
+        left      : 0;
+        object-fit: cover;
+        top       : 0;
+        width     : 100%;
+        z-index   : -1;
+    }
 }
