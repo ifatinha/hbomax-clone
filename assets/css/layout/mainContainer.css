@@ -2,9 +2,10 @@
     align-items    : center;
     display        : var(--hm-display-flex);
     flex-direction : column;
-    height         : 60%;
+    height         : auto;
     justify-content: center;
     position       : relative;
+    top            : 60px;
     width          : 100%;
 }
 
@@ -12,6 +13,7 @@
     .main {
         background: transparent;
         height    : 100%;
+        top       : 0;
     }
 }
 
@@ -47,7 +49,7 @@
     text-transform: uppercase;
 }
 
-.main-poster p:not(span, p:last-of-type),
+.main-poster p:not(span, p.txt-small),
 .main-poster p strong {
     font-size     : var(--hm-font-40);
     font-weight   : 700;
@@ -57,7 +59,7 @@
 
 @media screen and (min-width: 768px) {
 
-    .main-poster p:not(span, p:last-of-type),
+    .main-poster p:not(span, p.txt-small),
     .main-poster p strong {
         font-size  : var(--hm-font-60);
         line-height: 60px;
@@ -67,12 +69,6 @@
 .poster-button {
     margin-top: 40px;
     width     : 100%;
-}
-
-.poster-button p {
-    font-size  : var(--hm-font-12);
-    font-weight: 300;
-    line-height: 16px;
 }
 
 .main-video {
@@ -107,5 +103,25 @@
         top       : 0;
         width     : 100%;
         z-index   : -1;
+    }
+}
+
+.main-cards {
+    align-items    : center;
+    display        : var(--hm-display-flex);
+    justify-content: space-between;
+    overflow       : hidden;
+    margin-top     : 20px;
+    width          : 100%;
+}
+
+.main-card_item {
+    flex     : 0 0 31%;
+    max-width: 31%;
+}
+
+@media screen and (min-width: 768px) {
+    .main-cards {
+        display: none;
     }
 }

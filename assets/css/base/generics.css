@@ -16,3 +16,9 @@ body {
 a {
     text-decoration: none;
 }
+
+.txt-small {
+    font-size  : var(--hm-font-12);
+    font-weight: 300;
+    line-height: 16px;
+}
