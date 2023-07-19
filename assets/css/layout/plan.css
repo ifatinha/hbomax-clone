@@ -59,6 +59,7 @@
     display        : var(--hm-display-flex);
     flex-direction : column;
     flex-basis     : 100%;
+    height         : 300px;
     justify-content: space-between;
     text-align     : center;
     padding        : 25px;
