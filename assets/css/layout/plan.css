@@ -124,6 +124,7 @@
 
 .anual-plan {
     position: relative;
+    z-index : 1;
 }
 
 .anual-plan::before {
@@ -142,7 +143,6 @@
     text-transform: uppercase;
     text-align    : center;
     width         : 215px;
-    z-index       : 1;
 }
 
 .anual-plan::after {
@@ -157,6 +157,7 @@
 
     -webkit-mask          : linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
+    z-index               : -1;
 }
 
 .plan-paragraph {
