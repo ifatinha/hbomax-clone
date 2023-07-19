@@ -2,7 +2,7 @@
     background-image: url("../../images/plans_background.png");
 }
 
-.plan>p {
+.plan p.section-subtitle {
     font-size     : var(--hm-font-12);
     font-weight   : 700;
     letter-spacing: 1.2px;
@@ -82,6 +82,10 @@
     .plan-card_item:nth-child(3) {
         order: 3;
     }
+
+    .plan-card_item {
+        margin-bottom: 40px;
+    }
 }
 
 .plan-card_desc {
@@ -115,4 +119,46 @@
     margin     : 0 auto;
     max-width  : 300px;
     width      : 100%;
+}
+
+.anual-plan {
+    position: relative;
+}
+
+.anual-plan::before {
+    background    : linear-gradient(46deg, #5b16bd, #b908f6);
+    border-radius : 50px;
+    content       : "Economize 5 meses";
+    font-size     : var(--hm-font-16);
+    font-weight   : 700;
+    left          : 0;
+    letter-spacing: 0.1em;
+    margin        : 0 auto;
+    padding       : 2px;
+    position      : absolute;
+    right         : 0;
+    top           : -12px;
+    text-transform: uppercase;
+    text-align    : center;
+    width         : 215px;
+    z-index       : 1;
+}
+
+.anual-plan::after {
+    background    : linear-gradient(0deg, #5b16bd, #b908f6);
+    border-radius : 8px;
+    content       : "";
+    inset         : 0;
+    mask          : linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    padding       : 2px;
+    position      : absolute;
+
+    -webkit-mask          : linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+}
+
+.plan-paragraph {
+    max-width: 700px;
+    width    : 100%;
 }
