@@ -1,13 +1,8 @@
 section {
-    align-items        : center;
     background-position: center center;
     background-size    : cover;
-    display            : var(--hm-display-flex);
-    flex-direction     : column;
-    justify-content    : center;
     min-height         : 100%;
-    padding            : 0 2%;
-    text-align         : center;
+    padding            : 60px 2%;
     width              : 100%;
 }
 

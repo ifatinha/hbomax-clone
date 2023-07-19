@@ -1,5 +1,10 @@
 .plan {
+    align-items     : center;
     background-image: url("../../images/plans_background.png");
+    display         : var(--hm-display-flex);
+    flex-direction  : column;
+    justify-content : center;
+    text-align      : center;
 }
 
 .plan p.section-subtitle {
