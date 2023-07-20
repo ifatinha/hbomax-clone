@@ -59,13 +59,15 @@
     align-items    : center;
     display        : var(--hm-display-flex);
     gap            : 40px;
-    justify-content: center;
+    justify-content: space-between;
     margin-top     : 20px;
+    text-align     : center;
     width          : 100%;
 }
 
 .premiere-item ul li {
-    flex          : 1;
+    background-color: darkblue;
+   
     text-align    : center;
     text-transform: uppercase;
     white-space   : nowrap;
