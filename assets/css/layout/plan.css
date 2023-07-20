@@ -67,7 +67,7 @@
     height         : 300px;
     justify-content: space-between;
     text-align     : center;
-    padding        : 25px;
+    padding        : 30px;
 }
 
 @media screen and (min-width: 998px) {

@@ -2,3 +2,119 @@
     background: linear-gradient(0, rgb(62 17 96), rgb(3 3 40));
     position  : relative;
 }
+
+.premiere-container {
+    display        : var(--hm-display-flex);
+    gap            : 20px;
+    flex-wrap      : wrap;
+    justify-content: center;
+    margin-top     : 50px;
+    padding        : 15px;
+}
+
+@media screen and (min-width: 998px) {
+    .premiere-container {
+        gap: 0px;
+    }
+}
+
+.premiere-item {
+    flex: 0 0 100%;
+}
+
+@media screen and (min-width: 998px) {
+    .premiere-item {
+        flex: 0 1 50%;
+    }
+}
+
+.premiere-item h3 {
+    font-size     : var(--hm-font-28);
+    font-weight   : 700;
+    letter-spacing: 3px;
+    line-height   : 30px;
+    margin        : 8px 0 4px;
+}
+
+.premiere-item>span {
+    background-image: linear-gradient(to left, rgba(116, 9, 121, 1), rgba(185, 8, 246, 1), rgba(91, 28, 230, 1));
+    display         : inline-block;
+    font-weight     : 700;
+    letter-spacing  : 1.6px;
+    line-height     : 20px;
+    margin-bottom   : 8px;
+    padding         : 5px 5px 5px 8px;
+    text-transform  : uppercase;
+}
+
+.premiere-item p {
+    font-size     : var(--hm-font-16);
+    letter-spacing: 1px;
+    line-height   : 28px;
+    max-width     : 500px;
+    width         : 100%;
+}
+
+.premiere-item ul {
+    align-items    : center;
+    display        : var(--hm-display-flex);
+    gap            : 40px;
+    justify-content: center;
+    margin-top     : 20px;
+    width          : 100%;
+}
+
+.premiere-item ul li {
+    flex          : 1;
+    text-align    : center;
+    text-transform: uppercase;
+    white-space   : nowrap;
+}
+
+.promo-img {
+    display      : none;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 998px) {
+    .promo-img {
+        display: block;
+    }
+}
+
+.premiere-item_actor {
+    border-radius: 50%;
+    height       : 86px;
+    margin       : 0 auto;
+    width        : 86px;
+}
+
+.premiere-item_actor img {
+    border-radius: 50%;
+    height       : 100%;
+    object-fit   : cover;
+}
+
+.premiere-item ul li h4 {
+    font-size     : var(--hm-font-16);
+    font-weight   : 500;
+    letter-spacing: 0.16px;
+    line-height   : 20px;
+    margin        : 4px 0px;
+}
+
+.premiere-item ul li p {
+    font-weight   : 700;
+    letter-spacing: 1px;
+    line-height   : 18px;
+}
+
+.premiere-item:nth-child(2) {
+    align-items    : center;
+    display        : var(--hm-display-flex);
+    justify-content: center;
+}
+
+.premiere-item:nth-child(2) img {
+    object-fit: cover;
+}
