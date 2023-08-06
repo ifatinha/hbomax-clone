@@ -4,6 +4,7 @@ section {
     height             : auto;
     padding            : 60px 2%;
     width              : 100%;
+    z-index: 1;
 }
 
 @media screen and (min-width: 998px) {

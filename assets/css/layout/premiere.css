@@ -1,15 +1,12 @@
-.premiere {
-    background: linear-gradient(0, rgb(62 17 96), rgb(3 3 40));
-    position  : relative;
-}
-
 /** premiere section desktop **/
 
 #premiere-desktop {
-    display: none;
+    background: linear-gradient(0, rgb(62 17 96), rgb(3 3 40));
+    display   : none;
+    position  : relative;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
     #premiere-desktop {
         display: block;
     }
@@ -18,13 +15,12 @@
 .premiere-slide {
     display        : var(--hm-display-flex);
     gap            : 20px;
-    flex-wrap      : wrap;
     justify-content: center;
     margin-bottom  : 25px;
     margin-top     : 50px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
     .premiere-slide {
         gap: 0px;
     }
@@ -87,73 +83,6 @@
     }
 }
 
-.premiere-item ul {
-    align-items    : center;
-    display        : var(--hm-display-flex);
-    gap            : 40px;
-    justify-content: space-evenly;
-    margin-top     : 20px;
-    text-align     : center;
-    width          : 100%;
-}
-
-.premiere-item ul li {
-    text-align    : center;
-    text-transform: uppercase;
-    white-space   : nowrap;
-}
-
-.premiere-item_actor {
-    border-radius: 50%;
-    height       : 58px;
-    margin       : 0 auto;
-    width        : 58px;
-}
-
-@media screen and (min-width: 998px) {
-    .premiere-item_actor {
-        height: 86px;
-        width : 86px;
-    }
-}
-
-.premiere-item_actor img {
-    border-radius: 50%;
-    height       : 100%;
-    object-fit   : cover;
-}
-
-.premiere-item ul li h4 {
-    font-size     : var(--hm-font-12);
-    font-weight   : 500;
-    letter-spacing: 0.12px;
-    line-height   : 16px;
-    margin        : 4px 0px;
-    white-space   : break-spaces;
-}
-
-@media screen and (min-width: 998px) {
-    .premiere-item ul li h4 {
-        font-size     : var(--hm-font-16);
-        letter-spacing: 0.16px;
-        line-height   : 20px;
-        white-space   : nowrap;
-    }
-}
-
-.premiere-item ul li p {
-    font-size     : var(--hm-font-12);
-    font-weight   : 700;
-    letter-spacing: 1px;
-    line-height   : 18px;
-}
-
-@media screen and (min-width: 998px) {
-    .premiere-item ul li p {
-        font-size: var(--hm-font-16);
-    }
-}
-
 .premiere-item:nth-child(2) {
     align-items    : center;
     display        : var(--hm-display-flex);
@@ -204,3 +133,163 @@
 }
 
 /* end premiere desktop section */
+
+/* movie actors list*/
+.movie-actor {
+    display        : var(--hm-display-flex);
+    gap            : 20px;
+    justify-content: space-evenly;
+    margin-top     : 20px;
+    text-align     : center;
+    width          : 100%;
+}
+
+.movie-actor li {
+    text-align    : center;
+    text-transform: uppercase;
+}
+
+.premiere-item_actor {
+    border-radius: 50%;
+    height       : 58px;
+    margin       : 0 auto;
+    width        : 58px;
+}
+
+@media screen and (min-width: 998px) {
+    .premiere-item_actor {
+        height: 86px;
+        width : 86px;
+    }
+}
+
+.premiere-item_actor img {
+    border-radius: 50%;
+    height       : 100%;
+    object-fit   : cover;
+}
+
+.movie-actor li h4 {
+    font-size     : var(--hm-font-12);
+    font-weight   : 500;
+    letter-spacing: 0.12px;
+    line-height   : 16px;
+    margin        : 4px 0px;
+}
+
+@media screen and (min-width: 998px) {
+    .movie-actor li h4 {
+        font-size     : var(--hm-font-16);
+        letter-spacing: 0.16px;
+        line-height   : 20px;
+    }
+}
+
+.movie-actor li p {
+    font-size     : var(--hm-font-12);
+    font-weight   : 700;
+    letter-spacing: 1px;
+    line-height   : 18px;
+}
+
+@media screen and (min-width: 998px) {
+    .movie-actor li p {
+        font-size: var(--hm-font-16);
+    }
+}
+
+/* end movie actors list*/
+
+/* start premiere mobile section */
+#premiere-mobile {
+    display      : none;
+    height       : 100%;
+    position     : relative;
+    padding-left : 0;
+    padding-right: 0;
+}
+
+@media screen and (max-width: 600px) {
+    #premiere-mobile {
+        display: block;
+    }
+}
+
+.premiere-mob_container {
+    background: linear-gradient(0, rgb(62 17 96), rgb(3 3 40));
+
+}
+
+.realese-title {
+    background-image: linear-gradient(to left, rgba(116, 9, 121, 1), rgba(185, 8, 246, 1), rgba(91, 28, 230, 1));
+    font-weight     : 700;
+    line-height     : 20px;
+    letter-spacing  : 1.6px;
+    margin-top      : 40px;
+    padding         : 10px 0;
+    text-align      : center;
+    text-transform  : uppercase;
+    width           : 100%;
+}
+
+.realese-container {
+    background-image   : url("../../images/ajlt-s2cover-video-mob.avif");
+    background-size    : cover;
+    background-position: inherit;
+    height             : 50vh;
+    position           : relative;
+    width              : 100%;
+}
+
+.realese-detail {
+    background     : radial-gradient(50% 66.6% at 50% 20.45%, rgba(196, 6, 154, 0.65) 0%, rgb(62 17 96) 100%);
+    border-radius  : 10px;
+    backdrop-filter: blur(0px);
+    margin         : -54px 15px 0 15px;
+    min-height     : 360px;
+    padding        : 5px 15px;
+    z-index        : 1;
+}
+
+.realese-detail h3 {
+    font-size     : var(--hm-font-24);
+    font-weight   : 700;
+    letter-spacing: 3px;
+    line-height   : 24px;
+    margin        : 8px 0 4px;
+    text-align    : center;
+}
+
+.realese-detail p {
+    font-size     : var(--hm-font-14);
+    letter-spacing: 1px;
+    line-height   : 24px;
+}
+
+.realese-btn {
+    align-items    : center;
+    background     : linear-gradient(180deg, rgb(62 17 96), rgba(3, 3, 40, 0.4));
+    display        : var(--hm-display-flex);
+    flex-direction : column;
+    gap            : 40px;
+    justify-content: center;
+    padding-bottom : 40px;
+    width          : 100%;
+}
+
+.realese-btn ul {
+    display: var(--hm-display-flex);
+    gap    : 20px;
+}
+
+.realese-btn ul a {
+    color    : var(--hm-white);
+    display  : inline-block;
+    font-size: 0.5rem;
+}
+
+.realese-btn ul li:first-of-type a {
+    opacity: 0.5;
+}
+
+/* end premiere mobile section */
