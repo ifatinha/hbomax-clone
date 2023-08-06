@@ -97,7 +97,7 @@
     text-align: center;
 }
 
-#btn-nowSign {
+.btn-nowSign {
     font-size: var(--hm-font-12);
 }
 
