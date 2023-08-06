@@ -173,7 +173,34 @@
 }
 
 .slide-btn {
-    margin: 40px 0 50px;
+    margin    : 40px 0 50px;
+    text-align: center;
+}
+
+.slide-btn span {
+    font-size: var(--hm-font-24);
+}
+
+.dividerSlide {
+    margin: 0 8px;
+}
+
+.dividerSlide,
+.totalSlide {
+    color  : var(--hm-white);
+    opacity: 0.75;
+}
+
+.btn-arrow {
+    color      : var(--hm-white);
+    font-size  : var(--hm-font-24);
+    margin-left: 16px;
+    opacity    : 0.75;
+    transition : var(--hm-transition);
+}
+
+.btn-arrow:hover {
+    opacity: 1;
 }
 
 /* end premiere desktop section */
