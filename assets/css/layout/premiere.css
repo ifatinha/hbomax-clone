@@ -213,7 +213,6 @@
 /* start premiere mobile section */
 #premiere-mobile {
     display      : none;
-    height       : 100%;
     position     : relative;
     padding-left : 0;
     padding-right: 0;
@@ -222,6 +221,7 @@
 @media screen and (max-width: 600px) {
     #premiere-mobile {
         display: block;
+        height: auto;
     }
 }
 
