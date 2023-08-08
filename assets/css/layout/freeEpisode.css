@@ -1,5 +1,6 @@
 .free-episode {
-    margin-top: 12px;
+    margin-top: 40px;
+    overflow  : hidden;
 }
 
 .free-episode_slide {
@@ -15,22 +16,22 @@
 }
 
 .episode-card {
-    display  : inline-block;
-    flex     : 0 0 65%;
-    max-width: 65%;
-    position : relative;
+    display     : inline-block;
+    flex        : 1 0 23%;
+    /* max-width: 65%; */
+    position    : relative;
 }
 
-@media screen and (min-width: 998px) {
+/* @media screen and (min-width: 998px) {
     .episode-card {
-        flex     : 0 0 24%;
-        max-width: 24%;
+        flex     : 1 0 auto;
+        /* max-width: 24%; 
     }
 }
 
 @media screen and (min-width: 768px) and (max-width:998px) {
     .episode-card {
-        flex     : 0 0 30%;
-        max-width: 30%;
+        flex     : 1 0 auto;
+        /* max-width: 30%; 
     }
-}
+} */
