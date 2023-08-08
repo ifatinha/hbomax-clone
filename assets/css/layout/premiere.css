@@ -1,9 +1,11 @@
+.section-premiere {}
+
 /** premiere section desktop **/
 
 #premiere-desktop {
-    background: linear-gradient(0, rgb(62 17 96), rgb(3 3 40));
-    display   : none;
-    position  : relative;
+    /* background: linear-gradient(0, rgb(62 17 96), rgb(3 3 40)); */
+    display : none;
+    position: relative;
 }
 
 @media screen and (min-width: 600px) {
@@ -12,12 +14,18 @@
     }
 }
 
+.container-slide {
+    background    : linear-gradient(0, rgb(62 17 96), rgb(3 3 40));
+    padding-bottom: 30px;
+    padding-top   : 50px;
+    width         : 100%;
+}
+
 .premiere-slide {
     display        : var(--hm-display-flex);
     gap            : 20px;
     justify-content: center;
-    margin-bottom  : 25px;
-    margin-top     : 50px;
+    padding        : 0 2%;
 }
 
 @media screen and (min-width: 600px) {
@@ -94,7 +102,9 @@
 }
 
 .premiere-slide_btn {
+    background: linear-gradient(180deg, rgb(62 17 96), rgba(3, 3, 40, 0.4));
     text-align: center;
+    width     : 100%;
 }
 
 .btn-nowSign {
@@ -102,7 +112,7 @@
 }
 
 .slide-btn {
-    margin    : 40px 0 50px;
+    padding   : 20px 0 40px;
     text-align: center;
 }
 

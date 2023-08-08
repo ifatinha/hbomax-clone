@@ -2,9 +2,9 @@ section {
     background-position: center center;
     background-size    : cover;
     height             : auto;
-    padding            : 60px 2%;
+    padding            : 48px 0;
     width              : 100%;
-    z-index: 1;
+    z-index            : 1;
 }
 
 @media screen and (min-width: 998px) {
