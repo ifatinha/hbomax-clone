@@ -10,7 +10,7 @@ body {
     color           : var(--hm-white);
     font-family     : var(--hm-font-primary);
     font-weight     : 300;
-    font-size       : 1.25rem;
+    font-size       : 16px;
     line-height     : 1.6;
 }
 
