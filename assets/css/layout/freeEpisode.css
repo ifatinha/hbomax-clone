@@ -1,46 +1,56 @@
 .free-episode {
-    margin          : 40px auto;
-    width           : 100%;
-    background-color: darkblue;
+    margin: 40px auto;
+    width : 100%;
 }
 
 .free-episode>.container {
-    background-color: palevioletred;
+    background-color: darkcyan;
 }
 
 .free-episode_slide {
-    display               : var(--hm-display-flex);
-    /* gap                : 10px; */
-    margin                : 0 28px 0 0;
-    overflow-y            : hidden;
-    overflow-x            : scroll;
-    /* padding            : 0 2%; */
-    position              : relative;
-    scroll-behavior       : smooth;
-    scroll-snap-type      : x mandatory;
-    width                 : 100%;
+    align-items       : center;
+    align-content     : center;
+    display           : var(--hm-display-flex);
+    gap               : 10px;
+    margin            : 0 8px;
+    overflow-x        : scroll;
+    overflow-y        : hidden;
+    scroll-behavior   : smooth;
+    scroll-snap-type  : x mandatory;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width   : none;
+    /** Firefox */
 }
 
-@media screen and (max-width: 998px) {}
+@media screen and (min-width: 768px) {
+    .free-episode_slide {
+        margin: 0 28px;
+    }
+
+    .free-episode_slide::-webkit-scrollbar {
+        display: none;
+    }
+}
 
 .episode-card {
     display  : inline-block;
-    flex     : 1 0 65%;
-    max-width: 65%;
+    flex     : 1 0 90%;
+    max-width: 90%;
     position : relative;
 }
 
 @media screen and (min-width: 998px) {
     .episode-card {
-        flex     : 1 0 24%;
-        max-width: 24%;
+        flex     : 1 0 25%;
+        max-width: 25%;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width:998px) {
     .episode-card {
-        flex     : 1 0 32%;
-        max-width: 32%;
+        flex     : 1 0 30%;
+        max-width: 30%;
     }
 }
 
