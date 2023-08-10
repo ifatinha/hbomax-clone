@@ -8,6 +8,7 @@
     text-align    : center;
     text-transform: uppercase;
     transition    : var(--hm-transition);
+    vertical-align: middle;
 }
 
 .btn-header {
@@ -18,7 +19,7 @@
 
 @media screen and (min-width: 768px) {
     .btn-header {
-        padding  : 6px 24px;
+        padding: 6px 24px;
     }
 }
 
@@ -52,4 +53,18 @@
 .btn-main:hover {
     background-position: 1% 50%;
     border-color       : rgb(198, 0, 255);
+}
+
+.btn-white-100 {
+    background-color: var(--hm-white-100);
+    border          : 1.6px solid var(--hm-black);
+    color           : var(--hm-bg-color);
+    padding         : 8px 24px;
+    transition      : color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s;
+}
+
+.btn-white-100:hover {
+    background-color: transparent;
+    border-color    : var(--hm-white-100);
+    color           : var(--hm-white-100);
 }

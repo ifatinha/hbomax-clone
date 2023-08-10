@@ -89,7 +89,7 @@
     font-size: var(--hm-font-24);
     position : absolute;
     top      : 140px;
-    right    : 34px;
+    right    : 10px;
     z-index  : 9999;
 }
 
@@ -114,7 +114,7 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width:998px) {
+@media screen and (min-width: 600px) and (max-width:998px) {
     .episode-card {
         flex     : 0 0 32%;
         max-width: 32%;
@@ -122,6 +122,35 @@
 }
 
 .episode-card img {
-    height: 100%;
-    width : 100%;
+    width: 100%;
+}
+
+.episode-card_desc {
+    bottom        : 0;
+    cursor        : pointer;
+    padding       : 5px 10px;
+    position      : absolute;
+    text-align    : center;
+    text-transform: uppercase;
+    width         : 100%;
+    z-index       : 999;
+}
+
+.episode-card_desc h2 {
+    font-size     : var(--hm-font-20);
+    font-weight   : 300;
+    letter-spacing: 3px;
+    line-height   : 24px;
+    margin        : 8px 0 12px;
+}
+
+.episode-card_desc span {
+    color         : var(--hm-pink);
+    font-weight   : 700;
+    letter-spacing: 1.6px;
+    line-height   : 20px;
+}
+
+.free-episode_btn {
+    text-align: center;
 }
