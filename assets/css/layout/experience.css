@@ -22,3 +22,48 @@
         max-width: 720px;
     }
 }
+
+.experience-detail {
+    display        : var(--hm-display-flex);
+    flex-wrap      : wrap;
+    gap            : 20px;
+    justify-content: space-around;
+    margin-bottom  : 40px;
+    margin-top     : 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .experience-detail {
+        gap: 0;
+    }
+}
+
+.experience-detail_item {
+    flex-basis: 100%;
+    padding   : 0 15px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .experience-detail_item {
+        flex-basis: 25%;
+    }
+}
+
+hr.line {
+    border    : 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+hr.line-magenta {
+    background-color: var(--hm-pink);
+    border-width    : 2px;
+    margin          : 0 auto 20px;
+    width           : 50px;
+}
+
+.experience-detail_item p {
+    font-size  : var(--hm-font-20);
+    line-height: 25px;
+    margin     : 24px 0px 0px;
+}
