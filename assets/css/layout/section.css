@@ -13,11 +13,16 @@ section {
     }
 }
 
+.section-header {
+    padding   : 24px 1%;
+    text-align: center;
+}
+
 .section-title {
     font-size  : var(--hm-font-24);
     font-weight: 500;
     line-height: 38px;
-    margin     : 8px auto 4px;
+    margin     : 8px 0 8px;
     text-align : center;
 }
 

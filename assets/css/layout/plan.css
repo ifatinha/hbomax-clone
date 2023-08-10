@@ -7,7 +7,7 @@
     text-align      : center;
 }
 
-.plan p.section-subtitle {
+.plan p.plan-subtitle {
     font-size     : var(--hm-font-12);
     font-weight   : 700;
     letter-spacing: 1.2px;
