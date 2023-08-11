@@ -126,14 +126,14 @@
 }
 
 .episode-card_desc {
-    bottom        : 0;
-    cursor        : pointer;
-    padding       : 5px 10px;
-    position      : absolute;
-    text-align    : center;
-    text-transform: uppercase;
-    width         : 100%;
-    z-index       : 999;
+    bottom          : 0;
+    cursor          : pointer;
+    padding         : 5px 8px;
+    position        : absolute;
+    text-align      : center;
+    text-transform  : uppercase;
+    width           : 100%;
+    z-index         : 999;
 }
 
 .episode-card_desc h2 {
