@@ -30,3 +30,15 @@ a {
     max-width: 1140px;
     width    : 100%;
 }
+
+hr.line {
+    border    : 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+hr.line-magenta {
+    background-color: var(--hm-pink);
+    border-width    : 2px;
+    margin          : 0 auto 20px;
+    width           : 50px;
+}

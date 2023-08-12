@@ -48,18 +48,6 @@
     }
 }
 
-hr.line {
-    border    : 0;
-    border-top: 1px solid rgba(0, 0, 0, .1);
-}
-
-hr.line-magenta {
-    background-color: var(--hm-pink);
-    border-width    : 2px;
-    margin          : 0 auto 20px;
-    width           : 50px;
-}
-
 .experience-detail_item p {
     font-size  : var(--hm-font-20);
     line-height: 25px;

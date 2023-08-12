@@ -22,13 +22,13 @@
     color         : rgb(158, 134, 255);
     cursor        : pointer;
     display       : var(--hm-display-flex);
-    font-family   : var(--hm-font-primary);
     font-weight   : 500;
-    flex-wrap     : wrap;
+    font-family   : var(--hm-font-primary);
     font-size     : var(--hm-font-20);
+    flex-wrap     : wrap;
     hyphens       : auto;
     line-height   : 32px;
-    padding       : 20px 24px;
+    padding       : 20px 24px 20px 0px;
     position      : relative;
     text-align    : left;
     /* white-space: break-spaces; */
@@ -77,4 +77,20 @@
     content: "";
     display: block;
     height : 0.75rem;
+}
+
+.accordion-panel p,
+.accordion-panel ul {
+    font-size  : var(--hm-font-20);
+    line-height: 32px;
+    font-weight: 500;
+}
+
+.accordion-panel p a {
+    color     : var(--hm-magenta);
+    transition: var(--hm-transition);
+}
+
+.accordion-panel p a:hover {
+    color: var(--hm-white);
 }
