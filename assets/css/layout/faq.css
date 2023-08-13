@@ -128,7 +128,7 @@
     width : 150px;
 }
 
-.device-card h4 {
+.device-card h2 {
     font-size  : var(--hm-font-24);
     font-weight: 500;
     line-height: 30px;
