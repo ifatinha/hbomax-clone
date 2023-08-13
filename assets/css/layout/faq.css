@@ -65,12 +65,12 @@
 }
 
 .accordion-panel {
-    border-top   : 1px solid rgba(255, 255, 255, 0.2);
-    display      : block;
-    /* max-height: 0px; */
-    overflow     : hidden;
-    transition   : max-height 2s cubic-bezier(0, 1, 0, 1) 0s;
-    text-align   : left;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    display   : block;
+    max-height: 0px;
+    overflow  : hidden;
+    transition: max-height 2s cubic-bezier(0, 1, 0, 1) 0s;
+    text-align: left;
 }
 
 .accordion-panel::before {
@@ -79,7 +79,7 @@
     height : 0.75rem;
 }
 
-.accordion-panel p,
+.accordion-panel>p,
 .accordion-panel ul {
     font-size  : var(--hm-font-20);
     line-height: 32px;
@@ -93,4 +93,58 @@
 
 .accordion-panel p a:hover {
     color: var(--hm-white);
+}
+
+.device-container {
+    display  : var(--hm-display-flex);
+    flex-wrap: wrap;
+    margin   : 24px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .device-container {
+        flex-wrap: nowrap;
+    }
+}
+
+.device-card {
+    align-items   : center;
+    display       : var(--hm-display-flex);
+    flex          : 0 0 100%;
+    flex-direction: column;
+    padding       : 0 8px;
+    text-align    : center;
+}
+
+@media screen and (min-width: 768px) {
+    .device-card {
+        flex: 0 0 25%;
+    }
+}
+
+.device-card img {
+    height: 104px;
+    margin: 15px 0;
+    width : 150px;
+}
+
+.device-card h4 {
+    font-size  : var(--hm-font-24);
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.device-card h4::after {
+    background: var(--hm-pink);
+    content   : "";
+    display   : block;
+    height    : 2px;
+    margin    : 20px auto;
+    width     : 70px;
+}
+
+.device-card p {
+    font-weight  : 500;
+    line-height  : 25px;
+    margin-bottom: 4px;
 }
