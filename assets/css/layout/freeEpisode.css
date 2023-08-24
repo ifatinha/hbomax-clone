@@ -91,6 +91,7 @@
     top      : 170px;
     right    : 15px;
     z-index  : 9999;
+    animation: pulse 2s ease-in-out infinite both;
 }
 
 @media screen and (min-width: 768px) {
@@ -126,14 +127,14 @@
 }
 
 .episode-card_desc {
-    bottom          : 0;
-    cursor          : pointer;
-    padding         : 5px 8px;
-    position        : absolute;
-    text-align      : center;
-    text-transform  : uppercase;
-    width           : 100%;
-    z-index         : 999;
+    bottom        : 0;
+    cursor        : pointer;
+    padding       : 5px 8px;
+    position      : absolute;
+    text-align    : center;
+    text-transform: uppercase;
+    width         : 100%;
+    z-index       : 999;
 }
 
 .episode-card_desc h2 {

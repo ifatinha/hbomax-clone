@@ -1,0 +1,21 @@
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(0.98);
+    }
+
+    75% {
+        transform: scale(0.87);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

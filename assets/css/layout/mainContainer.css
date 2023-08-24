@@ -33,6 +33,10 @@
     }
 }
 
+#btn-main-animated {
+    animation: pulse 2s ease-in-out infinite both;
+}
+
 .main-poster span {
     font-weight: 300;
     line-height: 20px;
