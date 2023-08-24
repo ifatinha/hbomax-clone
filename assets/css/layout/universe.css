@@ -57,6 +57,30 @@
     transition: 0.5s ease;
 }
 
-.universe-card:hover .poster-houver {
-    opacity: 1;
+@media screen and (min-width: 768px) {
+    .universe-card:hover .poster-houver {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .universe-card .poster-houver {
+        animation: FadeOutIn 4s infinite;
+    }
+}
+
+.universe-btn {
+    display   : block;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.universe-btn .btn-main {
+    animation: rotate 2s ease-in-out infinite both;
+}
+
+@media screen and (min-width: 991px) {
+    .universe-btn {
+        display: none;
+    }
 }

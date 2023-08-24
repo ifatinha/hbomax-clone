@@ -88,10 +88,10 @@
     display  : inline-block;
     font-size: var(--hm-font-24);
     position : absolute;
-    top      : 170px;
+    top      : 200px;
     right    : 15px;
     z-index  : 9999;
-    animation: pulse 2s ease-in-out infinite both;
+    animation: slideLeft 1.5s ease-in-out infinite both;
 }
 
 @media screen and (min-width: 768px) {
