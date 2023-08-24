@@ -6,12 +6,15 @@ body {
 }
 
 body {
+    font-weight: 300;
+    font-size  : 16px;
+    line-height: 1.6;
+}
+
+body#index {
     background-color: var(--hm-bg-color);
     color           : var(--hm-white);
     font-family     : var(--hm-font-primary);
-    font-weight     : 300;
-    font-size       : 16px;
-    line-height     : 1.6;
 }
 
 a {

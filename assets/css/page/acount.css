@@ -1,0 +1,24 @@
+body#account {
+    background-image   : url("../../images/account-bg-gradient.jpg");
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+}
+
+.account-header {
+    align-items     : center;
+    background-color: rgba(0, 0, 0, .4);
+    display         : var(--hm-display-flex);
+    height          : 64px;
+    justify-content : center;
+    width           : 100%;
+}
+
+.account-header a {
+    display: inline-block;
+}
+
+.account-header img {
+    height: 32px;
+    width : 120px;
+}
