@@ -5,6 +5,13 @@
     overflow-y     : hidden;
     overflow-x     : auto;
     position       : relative;
+    transition     : 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 998px) {
+    .universe:hover> :not(:hover) {
+        opacity: 0.2;
+    }
 }
 
 @media screen and (max-width: 574px) {
@@ -18,13 +25,17 @@
     display   : inline-block;
     flex      : 0 0 85%;
     padding   : 20px;
-    transition: 0.5s ease;
+    transition: 0.5s ease-in-out;
 }
 
 @media screen and (min-width: 574px) {
     .universe-card {
         flex         : 0 0 33.33%;
         margin-bottom: 10px;
+    }
+
+    .universe-card:hover {
+        transform: translateY(-20px);
     }
 }
 
