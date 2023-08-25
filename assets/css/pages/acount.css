@@ -24,11 +24,11 @@ body#account {
 }
 
 .account-container {
-    align-items    : center;
-    display        : var(--hm-display-flex);
-    flex-direction : column;
-    padding        : 40px 16px;
-    width          : 100%;
+    align-items   : center;
+    display       : var(--hm-display-flex);
+    flex-direction: column;
+    padding       : 40px 16px;
+    width         : 100%;
 }
 
 .account-title {
@@ -40,9 +40,12 @@ body#account {
 }
 
 .account-form {
-    padding-top: 16px;
-    max-width  : 440px;
-    width      : 100%;
+    align-items   : center;
+    display       : var(--hm-display-flex);
+    flex-direction: column;
+    padding-top   : 16px;
+    max-width     : 440px;
+    width         : 100%;
 }
 
 .form-item {
@@ -65,7 +68,7 @@ body#account {
     font-family  : var(--hm-font-primary);
     font-weight  : 300;
     font-size    : var(--hm-font-16);
-    padding      : 18px 0;
+    padding      : 12px 0;
     outline      : none !important;
     width        : 100%;
 }
@@ -99,4 +102,15 @@ body#account {
 
 .form-input:focus~.form-underline {
     transform: scaleX(1);
+}
+
+.form-icon {
+    color   : var(--hm-gray-200);
+    position: absolute;
+    right   : 10px;
+    top     : 5px;
+}
+
+.form-btn {
+    width: 100%;
 }
