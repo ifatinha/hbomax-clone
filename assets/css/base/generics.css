@@ -11,9 +11,10 @@ body {
     font-weight: 300;
     font-size  : 16px;
     line-height: 1.6;
+    min-height : 100%;
 }
 
-body#index {
+#index {
     background-color: var(--hm-bg-color);
 }
 

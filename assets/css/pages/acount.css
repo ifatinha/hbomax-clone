@@ -1,15 +1,14 @@
-body#account {
+#account {
     background-image   : url("../../images/account-bg-gradient.jpg");
-    background-position: center;
-    background-repeat  : no-repeat;
-    background-size    : cover;
+    background-position: center center;
 }
 
+/*** start header ***/
 .account-header {
     align-items     : center;
     background-color: rgba(0, 0, 0, .4);
     display         : var(--hm-display-flex);
-    height          : 64px;
+    min-height      : 64px;
     justify-content : center;
     width           : 100%;
 }
@@ -23,11 +22,15 @@ body#account {
     width: 120px;
 }
 
+/*** end header ***/
+
+/*** start main ***/
 .account-container {
     align-items   : center;
     display       : var(--hm-display-flex);
     flex-direction: column;
-    padding       : 40px 16px;
+    height        : auto;
+    padding       : 40px 2%;
     width         : 100%;
 }
 
@@ -106,11 +109,83 @@ body#account {
 
 .form-icon {
     color   : var(--hm-gray-200);
+    display : inline-block;
     position: absolute;
     right   : 10px;
     top     : 5px;
 }
 
-.form-btn {
-    width: 100%;
+.form-btn:last-of-type {
+    padding-bottom: 32px;
 }
+
+#form-btn {
+    padding: 32px 0;
+}
+
+.form-btn {
+    text-align: center;
+    width     : 100%;
+}
+
+.account-register {
+    max-width : 440px;
+    text-align: center;
+    width     : 100%;
+}
+
+.account-register p,
+.account-register a {
+    color      : var(--hm-white-100);
+    font-size  : var(--hm-font-14);
+    line-height: 24px;
+}
+
+.account-register a {
+    color: var(--hm-magenta);
+}
+
+.account-register p:first-of-type {
+    padding: 14px 0;
+}
+
+/*** end main ***/
+
+/*** start footer ***/
+.footer {
+    align-items     : center;
+    background-color: rgba(3, 3, 40, .8);
+    display         : var(--hm-display-flex);
+    justify-content : center;
+    min-height      : 100px;
+    padding         : 12px 2%;
+    width           : 100%;
+}
+
+.footer-list {
+    align-items    : start;
+    display        : var(--hm-display-flex);
+    flex-direction : column;
+    justify-content: center;
+    width          : 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-list {
+        align-items   : center;
+        flex-direction: row;
+    }
+}
+
+.footer-list li {
+    display    : inline-block;
+    line-height: 24px;
+    padding    : 8px 12px;
+    white-space: nowrap;
+}
+
+.footer-list a {
+    color: var(--hm-magenta);
+}
+
+/*** end footer ***/

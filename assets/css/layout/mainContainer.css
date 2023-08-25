@@ -2,7 +2,7 @@
     align-items    : center;
     display        : var(--hm-display-flex);
     flex-direction : column;
-    height         : auto;
+    height         : 100%;
     justify-content: center;
     position       : relative;
     top            : 60px;

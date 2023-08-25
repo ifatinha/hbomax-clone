@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="account">
 
 <head>
     <meta charset="UTF-8">
@@ -15,12 +15,13 @@
     <title>HBO MAX Clone</title>
 </head>
 
-<body id="account">
+<body>
     <header class="account-header">
         <a href="#" aria-label="HBO MAX">
             <img src="../assets/images/hbo-max-logo.svg" alt="HBO MAX Logo">
         </a>
     </header>
+
     <main class="account-container">
         <h1 class="account-title">Entrar</h1>
         <form action="#" class="account-form">
@@ -37,12 +38,27 @@
                 <div class="form-underline"></div>
             </div>
 
+            <div class="form-btn" id="form-btn">
+                <a href="#" class="btn-account btn-account-purple">Entrar</a>
+            </div>
             <div class="form-btn">
-                <a href="#" class="btn-default">Entrar</a>
-                <a href="#" class="btn-default">Entrar com um provedor</a>
+                <a href="#" class="btn-account btn-account-white">Entrar com um provedor</a>
             </div>
         </form>
+        <div class="account-register">
+            <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+            <p><a href="#">Esqueceu a senha?</a> <a href="#">Precisa de ajuda?</a></p>
+        </div>
     </main>
+
+    <footer class="footer">
+        <ul class="footer-list">
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="#">Informações</a></li>
+            <li><a href="#">Português (Brasil)</a></li>
+        </ul>
+    </footer>
 
     <script src="https://kit.fontawesome.com/a12613cd88.js" crossorigin="anonymous"></script>
 </body>
