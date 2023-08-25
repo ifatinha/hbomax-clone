@@ -11,6 +11,7 @@
     --hm-white       : #ffffff;
     --hm-white-100   : #f8f9fa;
     --hm-gray-100    : #f9fafb;
+    --hm-gray-200    : #999999;
     --hm-black-rgb   : 0, 0, 0;
     --hm-link-houver : #0056b3;
 
@@ -24,6 +25,7 @@
     --hm-font-28     : 1.75rem;
     --hm-font-24     : 1.5rem;
     --hm-font-20     : 1.25rem;
+    --hm-font-18     : 1.125rem;
     --hm-font-16     : 1rem;
     --hm-font-14     : 0.875rem;
     --hm-font-12     : 0.75rem;

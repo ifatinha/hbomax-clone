@@ -1,0 +1,102 @@
+body#account {
+    background-image   : url("../../images/account-bg-gradient.jpg");
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+}
+
+.account-header {
+    align-items     : center;
+    background-color: rgba(0, 0, 0, .4);
+    display         : var(--hm-display-flex);
+    height          : 64px;
+    justify-content : center;
+    width           : 100%;
+}
+
+.account-header a {
+    display: inline-block;
+    margin : 4px 0 0 4px;
+}
+
+.account-header img {
+    width: 120px;
+}
+
+.account-container {
+    align-items    : center;
+    display        : var(--hm-display-flex);
+    flex-direction : column;
+    padding        : 40px 16px;
+    width          : 100%;
+}
+
+.account-title {
+    font-size  : var(--hm-font-32);
+    font-weight: 300;
+    line-height: 40px;
+    margin     : 20px 0 40px;
+    text-align : center;
+}
+
+.account-form {
+    padding-top: 16px;
+    max-width  : 440px;
+    width      : 100%;
+}
+
+.form-item {
+    margin-bottom: 40px;
+    position     : relative;
+    width        : 100%;
+}
+
+.form-label,
+.form-input,
+.form-underline {
+    width: 100%;
+}
+
+.form-input {
+    background   : transparent;
+    border       : none;
+    border-bottom: 2px solid var(--hm-gray-200);
+    color        : var(--hm-white);
+    font-family  : var(--hm-font-primary);
+    font-weight  : 300;
+    font-size    : var(--hm-font-16);
+    padding      : 18px 0;
+    outline      : none !important;
+    width        : 100%;
+}
+
+.form-label {
+    font-size     : var(--hm-font-18);
+    left          : 0;
+    pointer-events: none;
+    position      : absolute;
+    top           : 0;
+    transition    : all 0.3s ease;
+}
+
+.form-input:focus~.form-label,
+.form-input:valid~.form-label {
+    color    : var(--hm-gray-200);
+    font-size: var(--hm-font-14);
+    top      : -20px;
+}
+
+.form-underline {
+    background: linear-gradient(0deg, #5b16bd, #b908f6);
+    bottom    : 0;
+    left      : 0;
+    height    : 2px;
+    position  : absolute;
+    transform : scale(0);
+    transition: .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    width     : 100%;
+}
+
+.form-input:focus~.form-underline {
+    transform: scaleX(1);
+}
