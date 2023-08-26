@@ -1,3 +1,17 @@
+/*** generics ***/
+.account-bg {
+    background-image   : url("../../images/account-bg-gradient.jpg");
+    background-position: center center;
+}
+
+.account-title {
+    font-size  : var(--hm-font-32);
+    font-weight: 300;
+    line-height: 40px;
+    margin     : 20px 0 40px;
+    text-align : center;
+}
+
 /*** start header ***/
 .account-header {
     align-items     : center;

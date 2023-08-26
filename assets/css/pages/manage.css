@@ -1,0 +1,78 @@
+.manage-main {
+    padding: 50px 2%;
+    width  : 100%;
+}
+
+.manage-container {
+    display              : grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas  :
+        "title title title title"
+        "payment payment payment details"
+        "manage-btn manage-btn manage-btn manage-btn";
+    margin   : 0 auto;
+    max-width: 950px;
+    width    : 100%;
+}
+
+.manage-container h2 {
+    border-bottom : 1px solid var(--hm-gray-200);
+    color         : var(--hm-gray-200);
+    grid-area     : title;
+    font-weight   : 300;
+    line-height   : 20px;
+    margin-bottom : 16px;
+    padding       : 30px 0 12px;
+    text-transform: uppercase;
+}
+
+.manage-payment {
+    grid-area: payment;
+    padding  : 16px 0;
+}
+
+.manage-payment p {
+    color        : var(--hm-white-100);
+    line-height  : 24px;
+    margin-bottom: 20px;
+}
+
+.manage-payment strong {
+    font-weight: 600;
+}
+
+.card-img {
+    background-image   : url("../../images/visa.png");
+    background-repeat  : no-repeat;
+    background-position: center;
+    background-size    : cover;
+    display            : inline-block;
+    height             : 20px;
+    margin             : 5px 5px -4px;
+    position           : relative;
+    width              : 30px;
+}
+
+.manage-detail {
+    grid-area : details;
+    padding   : 16px 0;
+    text-align: right;
+}
+
+.manage-detail p {
+    line-height: 24px;
+    padding    : 6px 0 16px;
+}
+
+.manage-link {
+    color      : var(--hm-magenta-100);
+    font-weight: 700;
+}
+
+.manage-btn {
+    align-items    : center;
+    display        : var(--hm-display-flex);
+    grid-area      : manage-btn;
+    gap            : 20px;
+    justify-content: start;
+}
