@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="account">
+<html lang="en" class="account-bg">
 
 <head>
     <meta charset="UTF-8">
@@ -24,16 +24,16 @@
 
     <main class="account-container">
         <h1 class="account-title">Entrar</h1>
-        <form action="#" class="account-form">
+        <form action="#" class="account-form" method="post">
             <div class="form-item">
-                <input type="email" name="email" id="email" class="form-input" required="">
+                <input type="email" name="email" id="email" class="form-input" required>
                 <label for="email" class="form-label">Endereço de e-mail</label>
                 <div class="form-underline"></div>
             </div>
 
             <div class="form-item">
-                <input type="password" name="password" id="password" class="form-input" required="">
-                <span class="form-icon"><i class="fa-solid fa-user"></i></span>
+                <input type="password" name="password" id="password" class="form-input" required>
+                <a href="#" class="form-icon"><i class="fa-regular fa-eye"></i></a>
                 <label for="password" class="form-label">Senha</label>
                 <div class="form-underline"></div>
             </div>
@@ -56,11 +56,17 @@
             <li><a href="#">Política de Privacidade</a></li>
             <li><a href="#">Termos de Uso</a></li>
             <li><a href="#">Informações</a></li>
-            <li><a href="#">Português (Brasil)</a></li>
+            <li>
+                <a href="#">
+                    <span><i class="fa-solid fa-globe"></i></span>
+                    Português (Brasil)
+                    <span><i class="fa-solid fa-chevron-down"></i></span>
+                </a>
+            </li>
         </ul>
     </footer>
 
-    <script src="https://kit.fontawesome.com/a12613cd88.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/09fa9cee0a.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
