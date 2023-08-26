@@ -46,3 +46,12 @@ hr.line-magenta {
     margin          : 0 auto 20px;
     width           : 50px;
 }
+
+.center-logo a {
+    display: inline-block;
+    margin : 4px 0 0 4px;
+}
+
+.center-logo img {
+    width: 120px;
+}

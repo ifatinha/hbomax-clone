@@ -1,0 +1,26 @@
+#singIn {
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+}
+
+@media (orientation: landscape) {
+    body {
+        background: url("../../images/singIn-bg-3840x2160.png");
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        background: url("../../images/singIn-mobile-bg-1920x1536.png");
+    }
+}
+
+/*** header ***/
+.singIn-header {
+    align-items     : center;
+    display         : var(--hm-display-flex);
+    justify-content : space-between;
+    padding         : 18px 2%;
+    background-color: darkgoldenrod;
+}
