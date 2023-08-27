@@ -2,6 +2,8 @@
 .account-bg {
     background-image   : url("../../images/account-bg-gradient.jpg");
     background-position: center center;
+    height             : 100%;
+    width              : 100%;
 }
 
 .account-title {
@@ -71,7 +73,7 @@
     font-family  : var(--hm-font-primary);
     font-weight  : 300;
     font-size    : var(--hm-font-16);
-    padding      : 12px 0;
+    padding      : 18px 0 10px;
     outline      : none !important;
     width        : 100%;
 }
@@ -112,7 +114,7 @@
     display : inline-block;
     position: absolute;
     right   : 10px;
-    top     : 5px;
+    top     : 12px;
 }
 
 .form-btn:last-of-type {
