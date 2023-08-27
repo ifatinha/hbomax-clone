@@ -104,3 +104,33 @@
 .btn-account-white:hover {
     border-color: var(--hm-purple-200);
 }
+
+.btn-square-white {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius   : 4px;
+    border          : 2px solid rgba(0, 0, 0, 0);
+    color           : rgba(255, 255, 255, 0.7);
+    font-family     : var(--hm-font-second);
+    font-size       : var(--hm-font-18);
+    letter-spacing  : 0;
+    line-height     : 22px;
+    padding         : 6px 12px;
+    transition      : var(--hm-transition);
+}
+
+.btn-square-white:hover {
+    background-color: var(--hm-white);
+    border-color    : var(--hm-black);
+    color           : var(--hm-black);
+}
+
+.btn-user-round {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius   : 50%;
+    color           : rgba(255, 255, 255, 0.7);
+    display         : inline-block;
+    height          : 36px;
+    padding         : 4px;
+    text-align      : center;
+    width           : 36px;
+}
