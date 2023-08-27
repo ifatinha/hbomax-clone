@@ -16,6 +16,7 @@
     --hm-gray-100    : #f9fafb;
     --hm-gray-200    : #999999;
     --hm-black-rgb   : 0, 0, 0;
+    --hm-white-rgb   : 255, 255, 255;
     --hm-link-houver : #0056b3;
 
     --hm-display-flex: flex;

@@ -16,11 +16,75 @@
     }
 }
 
-/*** header ***/
-.singIn-header {
-    align-items     : center;
-    display         : var(--hm-display-flex);
-    justify-content : space-between;
-    padding         : 18px 2%;
-    background-color: darkgoldenrod;
+/*** start main ***/
+.signIn {
+    width: 100%;
 }
+
+.signIn-container {
+    align-items   : center;
+    display       : var(--hm-display-flex);
+    flex-direction: column;
+    font-family   : var(--hm-font-second);
+    max-width     : 930px;
+    margin        : 0 auto;
+    padding       : 20px 2%;
+    width         : 100%;
+}
+
+.signIn-title {
+    color         : var(--hm-white-rgb);
+    font-size     : var(--hm-font-32);
+    letter-spacing: 0;
+    line-height   : 34px;
+    margin        : 28px 0;
+}
+
+.singIn-form {
+    background-color: rgba(221, 221, 221, 0.06);
+    border-radius   : 8px;
+    padding         : 28px;
+    width           : 100%;
+}
+
+.singIn-form p {
+    color        : var(--hm-white-rgb);
+    font-family  : var(--hm-font-second);
+    font-weight  : normal;
+    font-size    : var(--hm-font-18);
+    line-height  : 18px;
+    margin-bottom: 20px;
+}
+
+.signIn-item {
+    padding : 10px 10px 0 10px;
+    position: relative;
+    width   : 100%;
+}
+
+.signIn-item input {
+    background-color: rgba(0, 0, 0, 0.2);
+    border          : 0.5px solid rgba(255, 255, 255, 0.4);
+    border-radius   : 4px;
+    color           : rgb(255, 255, 255);
+    font-family     : var(--hm-font-second);
+    font-size       : var(--hm-font-18);
+    height          : 56px;
+    padding-left    : 12px;
+    width           : 100%;
+}
+
+.signIn-item a {
+    right: 20px;
+    top  : 28px;
+}
+
+.signIn-btn {
+    align-self     : center;
+    display        : var(--hm-display-flex);
+    gap            : 30px;
+    justify-content: flex-start;
+    margin-top     : 20px;
+}
+
+/*** end main ***/

@@ -156,7 +156,7 @@
 
 @font-face {
     font-family: 'HBO Family Regular';
-    font-style : normal;
-    font-weight: normal;
+    font-style : normal !important;
+    font-weight: normal !important;
     src        : local('HBO Family Regular'), url('hbo-family/HBO Family.woff') format('woff');
 }

@@ -14,17 +14,21 @@
 }
 
 .center-logo {
-    height: 32px;
-    width : 120px;
+    flex-grow : 1;
+    height    : 32px;
+    text-align: center;
+    width     : 134px;
 }
 
 .center-logo a {
     display: inline-block;
+    height : 32px;
     margin : 4px 0 0 4px;
+    width  : 134px;
 }
 
 .center-logo img {
-    width: 120px;
+    object-fit: cover;
 }
 
 .header-icon {
@@ -48,11 +52,17 @@
 .header-right {
     align-items: center;
     display    : var(--hm-display-flex);
+    flex-basis : 225px;
 }
 
 .header-left {
     justify-content: center;
     padding-right  : 16px;
+}
+
+.header-right {
+    justify-content: flex-end;
+    padding-left   : 16px;
 }
 
 .header-link {
