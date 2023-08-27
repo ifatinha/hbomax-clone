@@ -2,7 +2,7 @@
     align-items    : center;
     display        : var(--hm-display-flex);
     flex-direction : column;
-    height         : 100%;
+    height         : auto;
     justify-content: center;
     position       : relative;
     top            : 60px;
@@ -86,7 +86,7 @@
         overflow: hidden;
         position: absolute;
         width   : 100%;
-        z-index : -2;
+        /* z-index : -2; */
     }
 
     .main-video::before {
