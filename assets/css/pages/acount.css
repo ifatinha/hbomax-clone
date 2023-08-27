@@ -2,6 +2,8 @@
 .account-bg {
     background-image   : url("../../images/account-bg-gradient.jpg");
     background-position: center center;
+    display            : var(--hm-display-flex);
+    flex-direction     : column;
     height             : 100%;
     width              : 100%;
 }

@@ -1,6 +1,7 @@
 .manage-main {
-    padding: 50px 2%;
-    width  : 100%;
+    flex-grow       : 1;
+    padding         : 50px 2%;
+    width           : 100%;
 }
 
 .manage-container {
