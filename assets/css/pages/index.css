@@ -907,12 +907,14 @@
 }
 
 .kid-container {
-    align-items    : center;
-    display        : var(--hm-display-flex);
-    flex-wrap      : wrap;
-    gap            : 20px;
-    justify-content: space-around;
-    padding        : 0;
+    align-items     : center;
+    display         : var(--hm-display-flex);
+    flex-wrap       : wrap;
+    gap             : 20px;
+    justify-content : space-around;
+    padding         : 0;
+    text-align      : center;
+    width           : 100%;
 }
 
 .kid-item {
