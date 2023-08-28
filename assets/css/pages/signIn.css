@@ -1,24 +1,27 @@
-.singIn {}
+#singIn {
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center center;
+    min-height         : 100%;
+    width              : 100%;
+}
 
 @media (orientation: landscape) {
-    body {
-        background      : url("../../images/singIn-bg-3840x2160.png");
-        background-color: darkred;
-        
+    .singIn {
+        background: url("../../images/singIn-bg-3840x2160.png");
     }
 }
 
 @media (orientation: portrait) {
-    body {
+    .singIn {
         background: url("../../images/singIn-mobile-bg-1920x1536.png");
     }
 }
 
 /*** start main ***/
-.signIn {
+.signIn-main {
     font-family: var(--hm-font-second);
     font-size  : var(--hm-font-16);
-    min-height : 100%;
     width      : 100%;
 }
 
@@ -26,10 +29,21 @@
     align-items   : center;
     display       : var(--hm-display-flex);
     flex-direction: column;
-    max-width     : 880px;
+    max-width     : 940px;
     margin        : 0 auto;
-    padding       : 20px 2%;
     width         : 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .signIn-container {
+        max-width: 590px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .signIn-container {
+        max-width: 485px;
+    }
 }
 
 .signIn-title {
@@ -42,25 +56,29 @@
 }
 
 .signIn-content {
-    background-color: rgba(221, 221, 221, 0.06);
-    border-radius   : 8px;
-    padding         : 60px;
-    width           : 100%;
+    border-radius: 8px;
+    padding      : 20px 4%;
+    width        : 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .signIn-content {
+        background-color: rgba(221, 221, 221, 0.06);
+        padding         : 60px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .signIn-content {
+        padding: 28px;
+    }
 }
 
 .signIn-paragraph {
     color        : var(--hm-white-rgb);
     font-weight  : normal;
-    font-size    : var(--hm-font-14);
     line-height  : 18px;
     margin-bottom: 20px;
-    text-align   : center;
-}
-
-@media screen and (min-width: 998px) {
-    .signIn-paragraph {
-        text-align: left;
-    }
 }
 
 .singIn-form {
@@ -79,7 +97,7 @@
     border-radius   : 4px;
     color           : rgb(255, 255, 255);
     font-family     : var(--hm-font-second);
-    font-size       : var(--hm-font-14);
+    font-size       : var(--hm-font-16);
     font-weight     : 500;
     height          : 56px;
     padding-left    : 12px;
@@ -92,10 +110,9 @@
 }
 
 .signIn-btn {
-    align-self     : center;
+    align-items    : center;
     display        : var(--hm-display-flex);
-    gap            : 10px;
-    flex-direction : column;
+    gap            : 20px;
     justify-content: flex-start;
     margin-top     : 20px;
 }
@@ -106,18 +123,26 @@
     }
 }
 
-.signIn-btn a {
+.signIn-btn button {
+    font-size: var(--hm-font-16);
+}
+
+.signIn-link {
     color      : rgb(145, 129, 248);
     font-family: var(--hm-font-second);
     font-weight: 600;
-    font-size  : var(--hm-font-14);
     line-height: 18px;
-    padding    : 14px 24px;
     transition : var(--hm-transition);
     text-align : center;
 }
 
-.signIn-btn a:hover {
+@media screen and (max-width: 600px) {
+    .signIn-link {
+        font-size: var(--hm-font-14);
+    }
+}
+
+.signIn-link:hover {
     filter: brightness(1.3);
 }
 
@@ -133,7 +158,6 @@
 .signIn-line span {
     align-items   : center;
     display       : var(--hm-display-flex);
-    font-size     : var(--hm-font-14);
     font-weight   : 600;
     flex-grow     : auto;
     line-height   : 18px;
@@ -143,14 +167,14 @@
 
 .signIn-underline {
     background-color: rgba(255, 255, 255, 0.3);
-    height          : 1px;
+    height          : 2px;
     flex-grow       : 1;
 }
 
-@media screen and (max-width: 600px) {
-    .signIn-provider {
-        text-align: center;
-    }
+.singIn-help {
+    padding   : 30px 2%;
+    text-align: center;
+    width     : 100%;
 }
 
 /*** end main ***/

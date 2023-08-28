@@ -1,30 +1,38 @@
 /*** start header ***/
 .header-default {
-    padding: 18px 2%;
-    width  : 100%;
+    padding         : 20px 2%;
+    width           : 100%;
 }
 
 .header-container {
     align-items    : center;
     display        : var(--hm-display-flex);
     justify-content: space-between;
-    max-width      : 1450px;
+    max-width      : 1400px;
     margin         : 0 auto;
     width          : 100%;
 }
 
 .center-logo {
     flex-grow : 1;
-    height    : 32px;
     text-align: center;
-    width     : 134px;
+    width     : 98px;
 }
 
 .center-logo a {
     display: inline-block;
-    height : 32px;
     margin : 4px 0 0 4px;
-    width  : 134px;
+    width  : 98px;
+}
+
+@media screen and (min-width: 768px) {
+    .center-logo {
+        width: 134px;
+    }
+
+    .center-logo a {
+        width: 134px;
+    }
 }
 
 .center-logo img {
@@ -52,11 +60,20 @@
 .header-right {
     align-items: center;
     display    : var(--hm-display-flex);
-    flex-basis : 225px;
+    gap        : 5px;
+    flex-basis : auto;
+}
+
+@media screen and (min-width: 768px) {
+
+    .header-left,
+    .header-right {
+        flex-basis: 225px;
+    }
 }
 
 .header-left {
-    justify-content: center;
+    justify-content: flex-start;
     padding-right  : 16px;
 }
 

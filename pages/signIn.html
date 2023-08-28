@@ -15,8 +15,8 @@
     <title>Entrar • HBO Max</title>
 </head>
 
-<body class="singIn">
-    <div>
+<body>
+    <div class="singIn" id="singIn">
         <header class="header-default">
             <div class="header-container">
                 <div class="header-left">
@@ -46,8 +46,7 @@
                 </div>
             </div>
         </header>
-
-        <main class="signIn">
+        <main class="signIn-main">
             <div class="signIn-container">
                 <h1 class="signIn-title">Entrar</h1>
                 <div class="signIn-content">
@@ -62,7 +61,7 @@
                         </div>
                         <div class="signIn-btn">
                             <button class="btn-square-border">Enviar</button>
-                            <a href="#">Esqueceu a senha?</a>
+                            <a href="#" class="signIn-link">Esqueceu a senha?</a>
                         </div>
                     </form>
                     <div class="signIn-line">
@@ -73,13 +72,15 @@
                     <p class="signIn-paragraph">
                         Você acessa a HBO Max por outra empresa, como um provedor de TV, de celular ou de Internet?
                     </p>
-                    <div class="signIn-provider">
-                        <a href="#" class="btn-square-border">Entrar com Provedor</a>
-                    </div>
+                    <a href="#" class="btn-square-border">Entrar com Provedor</a>
                 </div>
+            </div>
+            <div class="singIn-help">
+                <a href="#" class="signIn-link">Precisa de ajuda para entrar?</a>
             </div>
         </main>
     </div>
+
     <script src="https://kit.fontawesome.com/09fa9cee0a.js" crossorigin="anonymous"></script>
 </body>
 
