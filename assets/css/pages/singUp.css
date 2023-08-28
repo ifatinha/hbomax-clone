@@ -1,0 +1,86 @@
+.singUp {
+    background-image     : url("../../images/singUp-bg.webp");
+    background-attachment: fixed;
+    background-position  : center center;
+    background-size      : cover;
+    min-height           : 100%;
+    position             : relative;
+    width                : 100%;
+}
+
+#singUp-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.96) 6.11%, rgba(0, 0, 0, 0.72) 41%, rgba(0, 0, 0, 0.48) 63.4%, rgba(0, 0, 0, 0.24) 82.67%, rgba(0, 0, 0, 0) 100%);
+}
+
+.singUp-main {
+    align-items    : flex-start;
+    display        : var(--hm-display-flex);
+    flex-direction : column;
+    font-family    : var(--hm-font-second);
+    height         : 85%;
+    justify-content: flex-end;
+    max-width      : 470px;
+    width          : 100%;
+}
+
+@media screen and (min-width: 998px) {
+    .singUp-main {
+        height     : 100%;
+        max-width  : 580px;
+        padding    : 147px 0 120px 120px;
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .singUp-main {
+        padding: 0 60px 60px;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 750px) {
+    .singUp-main {
+        height: 110%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .singUp-main {
+        padding: 0 20px 60px;
+    }
+}
+
+.singUp-container {
+    max-width  : 450px;
+    padding-top: 40px;
+    width      : 100%;
+}
+
+.singUp-container h1 {
+    font-weight: 600;
+    font-size  : var(--hm-font-28);
+    line-height: 32px;
+}
+
+.singUp-container p {
+    line-height  : 18px;
+    margin-top   : 18px;
+    margin-bottom: 44px;
+}
+
+.singUp-link {
+    margin-top: 40px;
+}
+
+.singUp-link a {
+    color         : rgb(145, 129, 248);
+    font-weight   : 600;
+    font-family   : var(--hm-font-second);
+    font-size     : var(--hm-font-14);
+    text-transform: uppercase;
+    transition    : var(--hm-transition);
+}
+
+.singUp-link a:hover {
+    color: var(--hm-white);
+}
