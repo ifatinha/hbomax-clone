@@ -1,17 +1,19 @@
-#singIn {
+.singIn {
     background-repeat  : no-repeat;
     background-size    : cover;
     background-position: center;
+    min-height         : 100%;
+    background-color   : red;
 }
 
 @media (orientation: landscape) {
-    body {
+    .singIn {
         background: url("../../images/singIn-bg-3840x2160.png");
     }
 }
 
 @media (orientation: portrait) {
-    body {
+    .singIn {
         background: url("../../images/singIn-mobile-bg-1920x1536.png");
     }
 }
@@ -20,6 +22,7 @@
 .signIn {
     font-family: var(--hm-font-second);
     font-size  : var(--hm-font-16);
+    min-height : 100%;
     width      : 100%;
 }
 
@@ -27,7 +30,7 @@
     align-items   : center;
     display       : var(--hm-display-flex);
     flex-direction: column;
-    max-width     : 800px;
+    max-width     : 880px;
     margin        : 0 auto;
     padding       : 20px 2%;
     width         : 100%;
@@ -45,16 +48,23 @@
 .signIn-content {
     background-color: rgba(221, 221, 221, 0.06);
     border-radius   : 8px;
-    padding         : 28px;
+    padding         : 60px;
     width           : 100%;
 }
 
-.signIn-content p {
+.signIn-paragraph {
     color        : var(--hm-white-rgb);
     font-weight  : normal;
-    font-size    : var(--hm-font-18);
+    font-size    : var(--hm-font-14);
     line-height  : 18px;
     margin-bottom: 20px;
+    text-align   : center;
+}
+
+@media screen and (min-width: 998px) {
+    .signIn-paragraph {
+        text-align: left;
+    }
 }
 
 .singIn-form {
@@ -73,7 +83,7 @@
     border-radius   : 4px;
     color           : rgb(255, 255, 255);
     font-family     : var(--hm-font-second);
-    font-size       : var(--hm-font-16);
+    font-size       : var(--hm-font-14);
     font-weight     : 500;
     height          : 56px;
     padding-left    : 12px;
@@ -104,6 +114,7 @@
     color      : rgb(145, 129, 248);
     font-family: var(--hm-font-second);
     font-weight: 600;
+    font-size  : var(--hm-font-14);
     line-height: 18px;
     padding    : 14px 24px;
     transition : var(--hm-transition);
@@ -126,6 +137,7 @@
 .signIn-line span {
     align-items   : center;
     display       : var(--hm-display-flex);
+    font-size     : var(--hm-font-14);
     font-weight   : 600;
     flex-grow     : auto;
     line-height   : 18px;
@@ -137,6 +149,12 @@
     background-color: rgba(255, 255, 255, 0.3);
     height          : 1px;
     flex-grow       : 1;
+}
+
+@media screen and (max-width: 600px) {
+    .signIn-provider {
+        text-align: center;
+    }
 }
 
 /*** end main ***/

@@ -112,7 +112,7 @@
     color           : rgba(255, 255, 255, 0.7);
     font-family     : var(--hm-font-second);
     font-weight     : 600;
-    font-size       : var(--hm-font-16);
+    font-size       : var(--hm-font-14);
     letter-spacing  : 0;
     line-height     : 22px;
     padding         : 6px 12px;
@@ -143,8 +143,9 @@
     border                : 2px solid transparent;
     border-radius         : 4px;
     color                 : var(--hm-white);
+    display               : inline-block;
     font-weight           : 600;
-    font-size             : var(--hm-font-16);
+    font-size             : var(--hm-font-14);
     padding               : 14px 24px;
     min-width             : 148px;
     transition            : var(--hm-transition);
