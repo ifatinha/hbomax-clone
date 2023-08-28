@@ -25,7 +25,6 @@
 
 @media screen and (min-width: 998px) {
     .singUp-main {
-        height     : 100%;
         max-width  : 580px;
         padding    : 147px 0 120px 120px;
         margin-left: 60px;
