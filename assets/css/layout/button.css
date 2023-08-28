@@ -111,7 +111,8 @@
     border          : 2px solid rgba(0, 0, 0, 0);
     color           : rgba(255, 255, 255, 0.7);
     font-family     : var(--hm-font-second);
-    font-size       : var(--hm-font-18);
+    font-weight     : 600;
+    font-size       : var(--hm-font-16);
     letter-spacing  : 0;
     line-height     : 22px;
     padding         : 6px 12px;
@@ -133,4 +134,24 @@
     padding         : 4px;
     text-align      : center;
     width           : 36px;
+}
+
+.btn-square-border {
+    background            : transparent;
+    background-color      : rgba(255, 255, 255, 0.05);
+    /* background-color   : rgba(62, 59, 68, 0.7); */
+    border                : 2px solid transparent;
+    border-radius         : 4px;
+    color                 : var(--hm-white);
+    font-weight           : 600;
+    font-size             : var(--hm-font-16);
+    padding               : 14px 24px;
+    min-width             : 148px;
+    transition            : var(--hm-transition);
+}
+
+.btn-square-border:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border-color    : var(--hm-link-houver);
+    cursor          : pointer;
 }

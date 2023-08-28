@@ -49,20 +49,27 @@
     <main class="signIn">
         <div class="signIn-container">
             <h1 class="signIn-title">Entrar</h1>
-            <form action="#" class="singIn-form">
-                <p>Você tem um conta da HBO Max?</p>
-                <div class="signIn-item">
-                    <input type="text" placeholder="Endereço de e-mail" required>
+            <div class="signIn-content">
+                <form action="#" class="singIn-form" method="post">
+                    <p>Você tem um conta da HBO Max?</p>
+                    <div class="signIn-item">
+                        <input type="text" placeholder="Endereço de e-mail" required>
+                    </div>
+                    <div class="signIn-item">
+                        <input type="password" name="password" placeholder="Senha" required>
+                        <a href="#" class="form-icon"><i class="fa-regular fa-eye"></i></a>
+                    </div>
+                    <div class="signIn-btn">
+                        <button class="btn-square-border">Enviar</button>
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+                </form>
+                <div class="signIn-line">
+                    <div class="signIn-underline"></div>
+                    <span>Ou</span>
+                    <div class="signIn-underline"></div>
                 </div>
-                <div class="signIn-item">
-                    <input type="password" name="password" placeholder="Senha" required>
-                    <a href="#" class="form-icon"><i class="fa-regular fa-eye"></i></a>
-                </div>
-                <div class="signIn-btn">
-                    <a href="#" class="btn-square-default">Entrar</a>
-                    <a href="#">Esqueceu a senha?</a>
-                </div>
-            </form>
+            </div>
         </div>
     </main>
     <script src="https://kit.fontawesome.com/09fa9cee0a.js" crossorigin="anonymous"></script>
