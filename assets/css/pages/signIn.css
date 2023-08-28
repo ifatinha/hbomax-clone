@@ -1,19 +1,15 @@
-.singIn {
-    background-repeat  : no-repeat;
-    background-size    : cover;
-    background-position: center;
-    min-height         : 100%;
-    background-color   : red;
-}
+.singIn {}
 
 @media (orientation: landscape) {
-    .singIn {
-        background: url("../../images/singIn-bg-3840x2160.png");
+    body {
+        background      : url("../../images/singIn-bg-3840x2160.png");
+        background-color: darkred;
+        
     }
 }
 
 @media (orientation: portrait) {
-    .singIn {
+    body {
         background: url("../../images/singIn-mobile-bg-1920x1536.png");
     }
 }
