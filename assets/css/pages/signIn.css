@@ -29,7 +29,7 @@
     align-items   : center;
     display       : var(--hm-display-flex);
     flex-direction: column;
-    max-width     : 940px;
+    max-width     : 875px;
     margin        : 0 auto;
     width         : 100%;
 }
@@ -95,13 +95,17 @@
     background-color: rgba(0, 0, 0, 0.2);
     border          : 0.5px solid rgba(255, 255, 255, 0.4);
     border-radius   : 4px;
-    color           : rgb(255, 255, 255);
+    color           : var(--hm-white);
     font-family     : var(--hm-font-second);
     font-size       : var(--hm-font-16);
     font-weight     : 400;
     height          : 56px;
     padding-left    : 12px;
     width           : 100%;
+}
+
+.signIn-item input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 #login-btn {
@@ -134,9 +138,11 @@
 
 .signIn-link {
     color      : rgb(145, 129, 248);
+    display    : inline-block;
     font-family: var(--hm-font-second);
     font-weight: 600;
     line-height: 18px;
+    padding    : 12px 0;
     transition : var(--hm-transition);
     text-align : center;
 }
@@ -156,7 +162,7 @@
     display        : var(--hm-display-flex);
     gap            : 10px;
     justify-content: center;
-    margin         : 32px 0;
+    margin         : 34px 0;
     width          : 100%;
 }
 

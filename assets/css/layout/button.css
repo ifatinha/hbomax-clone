@@ -145,7 +145,7 @@
     color                 : var(--hm-white);
     display               : inline-block;
     font-weight           : 600;
-    padding               : 14px 24px;
+    padding               : 12px 20px;
     min-width             : 148px;
     transition            : var(--hm-transition);
 }
