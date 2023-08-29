@@ -45,3 +45,23 @@ hr.line-magenta {
     margin          : 0 auto 20px;
     width           : 50px;
 }
+
+div.background-default {
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center center;
+    min-height         : 100%;
+    width              : 100%;
+}
+
+@media (orientation: landscape) {
+    .background-default {
+        background: url("../../images/default-bg-3840x2160.png");
+    }
+}
+
+@media (orientation: portrait) {
+    .background-default {
+        background: url("../../images/default-mobile-bg-1920x1536.png");
+    }
+}
