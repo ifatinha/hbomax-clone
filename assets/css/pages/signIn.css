@@ -98,10 +98,15 @@
     color           : rgb(255, 255, 255);
     font-family     : var(--hm-font-second);
     font-size       : var(--hm-font-16);
-    font-weight     : 500;
+    font-weight     : 400;
     height          : 56px;
     padding-left    : 12px;
     width           : 100%;
+}
+
+#login-btn {
+    color  : inherit;
+    display: inline-block;
 }
 
 .signIn-item a {

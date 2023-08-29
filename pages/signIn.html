@@ -29,7 +29,7 @@
                     <a href="#" class="header-link">Séries</a>
                 </div>
                 <div class="center-logo">
-                    <a href="#" aria-label="HBO Max">
+                    <a href="home.html" aria-label="HBO Max">
                         <img src="../assets/images/hbo-max-logo.svg" alt="HBO MAX Logo">
                     </a>
                 </div>
@@ -50,17 +50,19 @@
             <div class="signIn-container">
                 <h1 class="signIn-title">Entrar</h1>
                 <div class="signIn-content">
-                    <form action="#" class="singIn-form" method="post">
+                    <form action="#" class="singIn-form">
                         <p class="signIn-paragraph">Você tem um conta da HBO Max?</p>
                         <div class="signIn-item">
-                            <input type="text" placeholder="Endereço de e-mail" required>
+                            <input type="text" name="login" placeholder="Endereço de e-mail" required>
                         </div>
                         <div class="signIn-item">
                             <input type="password" name="password" placeholder="Senha" required>
                             <a href="#" class="form-icon"><i class="fa-regular fa-eye"></i></a>
                         </div>
                         <div class="signIn-btn">
-                            <button class="btn-square-border">Enviar</button>
+                            <button class="btn-square-border">
+                                <a href="profile.html" id="login-btn">Entrar</a>
+                            </button>
                             <a href="#" class="signIn-link">Esqueceu a senha?</a>
                         </div>
                     </form>
@@ -81,6 +83,7 @@
         </main>
     </div>
 
+    <script src="./../scripts/script.js"></script>
     <script src="https://kit.fontawesome.com/09fa9cee0a.js" crossorigin="anonymous"></script>
 </body>
 
