@@ -1,0 +1,118 @@
+.sidenav-modal {
+    background-color: rgba(0, 0, 0, 0.7);
+    min-height      : 100%;
+    inset           : 0;
+    opacity         : 0;
+    overflow        : hidden;
+    position        : absolute;
+    transition      : var(--hm-transition);
+    z-index         : 99999;
+    width           : 100%;
+    z-index         : -9999;
+}
+
+/* .sidenav-modal:hover {
+    opacity: 1;
+} */
+
+.sidenav {
+    background-color: rgb(15, 15, 15);
+    box-shadow      : rgba(0, 0, 0, 0.35) 0px 2px 8px;
+    height          : 100%;
+    left            : 0;
+    overflow        : auto;
+    padding         : 24px 28px 28px;
+    position        : absolute;
+    top             : 0;
+    transform       : translateX(0px);
+    width           : 358px;
+}
+
+.sidenav ul {
+    width: 100%;
+}
+
+.sidenav ul li {
+    word-break: keep-all;
+}
+
+@media screen and (min-width: 998px) {
+    .sidenav {
+        padding: 24px 60px 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sidenav {
+        width: 274px;
+    }
+}
+
+.sidenav::-webkit-scrollbar {
+    width: 3px;
+}
+
+.sidenav::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.sidenav::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius   : 8px;
+}
+
+.sidenav a {
+    color      : rgba(255, 255, 255, 0.7);
+    display    : inline-block;
+    font-weight: 400;
+    font-family: var(--hm-font-second);
+    font-size  : var(--hm-font-20);
+    margin-left: 4px;
+    padding    : 10px 0;
+    line-height: 30px;
+    transition : var(--hm-transition);
+    transform  : scale(1);
+    word-wrap  : break-word;
+}
+
+.sidenav a:hover {
+    color    : var(--hm-white);
+    transform: scale(1.05);
+}
+
+.gender {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-top   : 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 16px;
+    margin-top   : 16px;
+    max-width    : 250px;
+}
+
+.gender>a {
+    align-items    : center;
+    display        : var(--hm-display-flex);
+    justify-content: space-between;
+}
+
+.gender-logo {
+    align-self     : center;
+    display        : var(--hm-display-flex);
+    flex-wrap      : wrap;
+    justify-content: space-evenly;
+    max-width      : 250px;
+}
+
+.gender-logo div {
+    margin-bottom: 18px;
+    width        : 176px;
+}
+
+.gender-logo a {
+    display: inline-block;
+    height : 39px;
+    width  : 70px;
+}
+
+.gender-logo img {
+    object-fit: cover;
+}

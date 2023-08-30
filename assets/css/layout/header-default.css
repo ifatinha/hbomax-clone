@@ -1,8 +1,8 @@
 /*** start header ***/
 .header-default {
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.96) 6.11%, rgba(0, 0, 0, 0.72) 41%, rgba(0, 0, 0, 0.48) 63.4%, rgba(0, 0, 0, 0.24) 82.67%, rgba(0, 0, 0, 0) 100%); */
-    padding: 20px 2%;
-    width  : 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.96) 6.11%, rgba(0, 0, 0, 0.72) 41%, rgba(0, 0, 0, 0.48) 63.4%, rgba(0, 0, 0, 0.24) 82.67%, rgba(0, 0, 0, 0) 100%);
+    padding         : 20px 2%;
+    width           : 100%;
 }
 
 .header-container {
@@ -41,10 +41,16 @@
 }
 
 .header-icon {
-    height  : 36px;
-    padding : 4px;
-    position: relative;
-    width   : 36px;
+    cursor    : pointer;
+    height    : 36px;
+    padding   : 4px;
+    position  : relative;
+    width     : 36px;
+    transition: var(--hm-transition);
+}
+
+.header-icon:hover .sidenav-modal {
+    opacity: 1;
 }
 
 .header-icon a {
