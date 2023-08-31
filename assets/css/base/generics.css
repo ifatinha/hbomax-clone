@@ -51,7 +51,9 @@ div.background-default {
     background-size    : cover;
     background-position: center center;
     min-height         : 100%;
+    position           : relative;
     width              : 100%;
+    /* z-index            : -99; */
 }
 
 @media (orientation: landscape) {
