@@ -1,8 +1,9 @@
 /*** start main ***/
 .signIn-main {
-    font-family: var(--hm-font-second);
-    font-size  : var(--hm-font-16);
-    width      : 100%;
+    font-family     : var(--hm-font-second);
+    font-size       : var(--hm-font-16);
+    padding-top     : 80px;
+    width           : 100%;
 }
 
 .signIn-container {

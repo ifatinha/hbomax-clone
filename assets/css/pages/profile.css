@@ -80,6 +80,11 @@
     width           : 100%;
 }
 
+.profile-img a {
+    display      : inline-block;
+    border-radius: 50%;
+}
+
 .profile-img img {
     border-radius: inherit;
     object-fit   : cover;

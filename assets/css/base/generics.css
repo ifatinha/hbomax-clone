@@ -47,13 +47,12 @@ hr.line-magenta {
 }
 
 div.background-default {
-    background-repeat  : no-repeat;
-    background-size    : cover;
-    background-position: center center;
-    min-height         : 100%;
-    position           : relative;
-    width              : 100%;
-    /* z-index            : -99; */
+    background-repeat     : no-repeat;
+    background-size       : cover;
+    background-position   : center center;
+    min-height            : 100%;
+    position              : relative;
+    width                 : 100%;
 }
 
 @media (orientation: landscape) {
