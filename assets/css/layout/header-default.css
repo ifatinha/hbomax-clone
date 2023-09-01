@@ -1,7 +1,7 @@
 /*** start header ***/
 .header-default {
     background-image: linear-gradient(rgba(0, 0, 0, 0.96) 6.11%, rgba(0, 0, 0, 0.72) 41%, rgba(0, 0, 0, 0.48) 63.4%, rgba(0, 0, 0, 0.24) 82.67%, rgba(0, 0, 0, 0) 100%);
-    padding         : 20px 2%;
+    padding         : 20px 4%;
     position        : absolute;
     width           : 100%;
     z-index         : 99999;
@@ -70,7 +70,7 @@
 .header-right {
     align-items: center;
     display    : var(--hm-display-flex);
-    gap        : 5px;
+    gap        : 10px;
     flex-basis : auto;
 }
 
@@ -133,5 +133,49 @@
         display: block;
     }
 }
+
+.header-profile {
+    align-items    : center;
+    color          : rgba(255, 255, 255, 0.7);
+    display        : var(--hm-display-flex);
+    font-family    : var(--hm-font-second);
+    font-size      : var(--hm-font-16);
+    font-weight    : 600;
+    gap            : 10px;
+    justify-content: center;
+    line-height    : 22px;
+    transition     : var(--hm-transition);
+}
+
+.header-profile:hover {
+    color: var(--hm-white);
+}
+
+@media screen and (min-width: 768px) {
+    .header-profile::after {
+        content: "Jessy";
+    }
+}
+
+.header-profile_img {
+    background-image: linear-gradient(4.71239rad, rgb(49, 131, 255) 1%, rgb(143, 0, 255) 96%);
+    border-radius   : 50%;
+    height          : 34px;
+    padding         : 3%;
+    width           : 34px;
+}
+
+@media screen and (min-width: 768px) {
+    .header-profile_img {
+        height : 40px;
+        padding: 2%;
+        width  : 40px;
+    }
+}
+
+.header-profile_img img {
+    border-radius: 50%;
+}
+
 
 /*** end header ***/
