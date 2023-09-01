@@ -1,7 +1,6 @@
 .home-main {
     background-image: linear-gradient(rgba(0, 0, 0, 0) 49.02%, rgba(0, 0, 0, 0.008) 52.42%, rgba(0, 0, 0, 0.035) 55.82%, rgba(0, 0, 0, 0.082) 59.22%, rgba(0, 0, 0, 0.15) 62.62%, rgba(0, 0, 0, 0.23) 66.02%, rgba(0, 0, 0, 0.333) 69.41%, rgba(0, 0, 0, 0.443) 72.81%, rgba(0, 0, 0, 0.557) 76.21%, rgba(0, 0, 0, 0.667) 79.61%, rgba(0, 0, 0, 0.77) 83.01%, rgba(0, 0, 0, 0.85) 86.41%, rgba(0, 0, 0, 0.918) 89.8%, rgba(0, 0, 0, 0.965) 93.2%, rgba(0, 0, 0, 0.992) 96.6%, rgb(0, 0, 0) 100%);
-    background-color: rgb(0, 0, 0);
-    height          : 600px;
+    height          : 650px;
     margin-bottom   : 36px;
     overflow        : hidden;
     opacity         : 1;
@@ -10,9 +9,15 @@
     width           : 100%;
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
+@media screen and (min-width: 651px) and (max-width: 768px) {
     .home-main {
         height: 432px;
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width: 650px) {
+    .home-main {
+        height: 288px;
     }
 }
 
@@ -23,25 +28,17 @@
 }
 
 .home-poster {
-    align-items     : center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24) 2.45%, rgba(0, 0, 0, 0.23) 4.91%, rgba(0, 0, 0, 0.22) 7.36%, rgba(0, 0, 0, 0.204) 9.81%, rgba(0, 0, 0, 0.184) 12.27%, rgba(0, 0, 0, 0.16) 14.72%, rgba(0, 0, 0, 0.133) 17.18%, rgba(0, 0, 0, 0.106) 19.63%, rgba(0, 0, 0, 0.08) 22.08%, rgba(0, 0, 0, 0.055) 24.54%, rgba(0, 0, 0, 0.035) 26.99%, rgba(0, 0, 0, 0.02) 29.44%, rgba(0, 0, 0, 0.008) 31.9%, rgba(0, 0, 0, 0.004) 34.35%, rgba(0, 0, 0, 0) 36.81%);
-    background-size : cover;
-    position        : relative;
-    height          : 100%;
-    width           : 100%;
+    align-items        : center;
+    background         : linear-gradient(rgba(0, 0, 0, 0) 49.02%, rgba(0, 0, 0, 0.008) 52.42%, rgba(0, 0, 0, 0.035) 55.82%, rgba(0, 0, 0, 0.082) 59.22%, rgba(0, 0, 0, 0.15) 62.62%, rgba(0, 0, 0, 0.23) 66.02%, rgba(0, 0, 0, 0.333) 69.41%, rgba(0, 0, 0, 0.443) 72.81%, rgba(0, 0, 0, 0.557) 76.21%, rgba(0, 0, 0, 0.667) 79.61%, rgba(0, 0, 0, 0.77) 83.01%, rgba(0, 0, 0, 0.85) 86.41%, rgba(0, 0, 0, 0.918) 89.8%, rgba(0, 0, 0, 0.965) 93.2%, rgba(0, 0, 0, 0.992) 96.6%, rgb(0, 0, 0) 100%), url("../../images/venu-poster.jpg");
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: 50% 50%;
+    position           : relative;
+    height             : 600px;
+    width              : 100%;
 }
 
-.home-img {
-    height  : 100%;
-    position: absolute;
-    width   : 100%;
-}
-
-.home-poster img {
-    object-fit: contain;
-}
-
-.home-desc {
+/*.home-desc {
     background-color: darkcyan;
     bottom          : 100px;
     display         : var(--hm-display-flex);
@@ -50,6 +47,7 @@
     left            : 60px;
     padding         : 2%;
     position        : absolute;
+    max-width: 428px;
     z-index         : 9999;
 }
 
@@ -94,3 +92,5 @@
     line-height: 24px;
     word-break : keep-all;
 }
+
+*/
