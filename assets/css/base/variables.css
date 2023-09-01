@@ -2,22 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans:wght@400;500&family=Roboto:wght@300;400;500&display=swap');
 
 :root {
-    --hm-bg-color    : #030328;
-    --hm-black       : #000000;
-    --hm-border-color: #f8f9fa;
-    --hm-purple      : #b535f6;
-    --hm-purple-100  : #7b2abf;
-    --hm-purple-200  : #9a35ef;
-    --hm-magenta     : #9e86ff;
-    --hm-magenta-100 : #bac7ff;
-    --hm-pink        : #ff00e5;
-    --hm-white       : #ffffff;
-    --hm-white-100   : #f8f9fa;
-    --hm-gray-100    : #f9fafb;
-    --hm-gray-200    : #999999;
-    --hm-black-rgb   : 0, 0, 0;
-    --hm-white-rgb   : 255, 255, 255;
-    --hm-link-houver : #0056b3;
+    --hm-bg-color     : #030328;
+    --hm-black        : #000000;
+    --hm-border-color : #f8f9fa;
+    --hm-purple       : #b535f6;
+    --hm-purple-100   : #7b2abf;
+    --hm-purple-200   : #9a35ef;
+    --hm-magenta      : #9e86ff;
+    --hm-magenta-100  : #bac7ff;
+    --hm-pink         : #ff00e5;
+    --hm-white        : #ffffff;
+    --hm-white-100    : #f8f9fa;
+    --hm-gray-100     : #f9fafb;
+    --hm-gray-200     : #999999;
+    --hm-black-rgb    : 0, 0, 0;
+    --hm-white-rgb    : 255, 255, 255;
+    --hm-link-houver  : #0056b3;
+    --hm-button-houver: #753eef;
 
     --hm-display-flex: flex;
 
