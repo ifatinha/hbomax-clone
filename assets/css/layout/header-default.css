@@ -43,12 +43,13 @@
 }
 
 .header-icon {
-    cursor    : pointer;
-    height    : 36px;
-    padding   : 4px;
-    position  : relative;
-    width     : 36px;
-    transition: var(--hm-transition);
+    cursor          : pointer;
+    height          : 36px;
+    padding         : 4px;
+    position        : relative;
+    transition      : var(--hm-transition);
+    text-align      : center;
+    width           : 36px;
 }
 
 .header-icon:hover .sidenav-modal {
@@ -70,8 +71,8 @@
 .header-right {
     align-items: center;
     display    : var(--hm-display-flex);
-    gap        : 10px;
     flex-basis : auto;
+    gap        : 8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -88,8 +89,8 @@
 }
 
 .header-right {
-    justify-content: flex-end;
-    padding-left   : 16px;
+    justify-content : flex-end;
+    padding-left    : 16px;
 }
 
 .header-link {

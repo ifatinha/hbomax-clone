@@ -1,18 +1,20 @@
-body#home {
-    background-repeat  : no-repeat;
+#home {
+    /* background-attachment : fixed; */
+    background-position: center;
     background-size    : cover;
-    background-position: center center;
+    background-repeat  : no-repeat;
+    background-color   : var(--hm-bg-color);
 }
 
 @media (orientation: landscape) {
     #home {
-        background: url("../../images/default-bg-3840x2160.png");
+        background-image: url("../../images/default-bg-3840x2160.png");
     }
 }
 
 @media (orientation: portrait) {
     #home {
-        background: url("../../images/default-mobile-bg-1920x1536.png");
+        background-image: url("../../images/default-mobile-bg-1920x1536.png");
     }
 }
 
@@ -170,3 +172,180 @@ body#home {
 }
 
 /*** end home-main section ***/
+
+/*** start article container ***/
+.banner {
+    padding: 30px 2% 60px;
+    width  : 100%;
+}
+
+.banner-container {
+    align-items          : center;
+    display              : grid;
+    grid-template-columns: 1fr;
+    gap                  : 20px;
+    justify-items        : self-end;
+    max-width            : 1200px;
+    margin               : 0 auto;
+    width                : 100%;
+}
+
+@media screen and (min-width: 800px) {
+    .banner-container {
+        grid-template-columns: 1fr 450px;
+    }
+
+    #banner-02 {
+        grid-template-columns: 450px 1fr;
+    }
+}
+
+.banner-img {
+    align-self  : center;
+    justify-self: center;
+}
+
+@media screen and (min-width: 800px) {
+    .banner-img {
+        justify-self: self-start;
+    }
+}
+
+.banner-desc {
+    align-self  : center;
+    font-family : var(--hm-font-second);
+    justify-self: center;
+}
+
+@media screen and (min-width: 800px) {
+    .banner-desc {
+        justify-self: self-start;
+    }
+}
+
+.banner-desc div {
+    align-items    : center;
+    display        : var(--hm-display-flex);
+    flex-direction : column;
+    justify-content: center;
+    max-width      : 480px;
+    text-align     : center;
+    width          : 100%;
+}
+
+@media screen and (min-width: 800px) {
+    .banner-desc div {
+        align-items: flex-start;
+        text-align : left;
+    }
+}
+
+.banner-desc h2 {
+    font-weight  : 600;
+    font-size    : var(--hm-font-16);
+    margin-bottom: 8px;
+    overflow-wrap: break-word;
+    white-space  : pre-wrap;
+}
+
+@media screen and (min-width: 700px) {
+    .banner-desc h2 {
+        font-size  : var(--hm-font-28);
+        line-height: 32px;
+    }
+}
+
+.banner-desc p {
+    font-weight  : 400;
+    font-size    : var(--hm-font-14);
+    line-height  : 18px;
+    margin-bottom: 40px;
+}
+
+.banner-desc span {
+    color         : rgba(255, 255, 255, 0.8);
+    font-size     : var(--hm-font-12);
+    font-weight   : 600;
+    letter-spacing: 0.5;
+    line-height   : 15px;
+    margin-bottom : 10px;
+    text-transform: uppercase;
+}
+
+/*** end article container ***/
+
+/*** footer home container ***/
+.footer-home {
+    padding: 180px 2% 44px;
+    width  : 100%;
+}
+
+.footer-container {
+    align-items    : flex-start;
+    display        : var(--hm-display-flex);
+    flex-direction : column;
+    justify-content: flex-start;
+    max-width      : 1400px;
+    margin         : 0 auto;
+    width          : 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-container {
+        flex-direction : row;
+        justify-content: space-between;
+    }
+}
+
+.footer-home-list {
+    align-items: center;
+    display    : var(--hm-display-flex);
+    gap        : 20px;
+}
+
+.footer-copyright,
+.footer-home-link a {
+    color      : rgba(255, 255, 255, 0.7);
+    font-family: var(--hm-font-second);
+    font-size  : var(--hm-font-14);
+    font-weight: 400;
+    text-align : right;
+}
+
+.footer-copyright {
+    max-width : 1400px;
+    margin    : 0 auto 10px;
+    text-align: left;
+    width     : 100%;
+}
+
+@media screen and (min-width:768px) {
+    .footer-copyright {
+        text-align: right;
+    }
+}
+
+.footer-home-link a {
+    transition: var(--hm-transition);
+}
+
+.footer-home-link a:hover {
+    color: var(--hm-white);
+}
+
+.footer-home-social a {
+    height : 16px;
+    display: inline-block;
+    width  : 16px;
+}
+
+.footer-home-social li {
+    transform : scale(1);
+    transition: var(--hm-transition);
+}
+
+.footer-home-social li:hover {
+    transform: scale(1.2);
+}
+
+/*** end footer ***/

@@ -5,8 +5,10 @@
 
 .carrousel {
     font-family  : var(--hm-font-second);
+    height       : auto;
     margin-bottom: 36px;
     overflow-x   : hidden;
+    padding      : 0 2%;
     width        : 100%;
 }
 
@@ -21,9 +23,19 @@
 
 .carrousel-title {
     font-weight   : 600;
-    font-size     : var(--hm-font-16);
+    font-size     : var(--hm-font-18);
     line-height   : 20px;
     letter-spacing: 0;
+    margin-bottom : 8px;
+    padding-right : 2%;
+}
+
+.carrousel-subtitle {
+    color        : rgba(var(--hm-white-rgb), 0.8);
+    font-weight  : 400;
+    font-size    : var(--hm-font-16);
+    line-height  : 18px;
+    padding-right: 2%;
 }
 
 .carrousel-content {
@@ -75,24 +87,10 @@
     width           : 100%;
 }
 
-@media screen and (min-width: 768px) {
-    .carrousel-card {
-        flex     : 0 0 25%;
-        max-width: 25%;
-    }
-}
-
-@media screen and (min-width: 600px) and (max-width: 768px) {
-    .carrousel-card {
-        flex     : 0 0 40%;
-        max-width: 40%;
-    }
-}
-
 .carrousel-img {
     border-radius: 4px;
-    border       : 2px solid transparent;
-    height       : 195px;
+    border       : 2.5px solid transparent;
+    height       : 100%;
     position     : relative;
     transition   : var(--hm-transition);
     width        : 100%;
@@ -109,6 +107,79 @@
     width        : 100%;
 }
 
+.carrousel-huge {
+    flex-basis: auto;
+    height    : 100%;
+    width     : 100%;
+}
+
+@media screen and (min-width: 998px) {
+    .carrousel-huge {
+        height   : 510px;
+        max-width: 340px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    .carrousel-huge {
+        height   : 348px;
+        max-width: 232px;
+    }
+}
+
+.carrousel-big {
+    width: 100%;
+}
+
+@media screen and (min-width: 998px) {
+    .carrousel-big {
+        height   : 258px;
+        max-width: 458px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    .carrousel-big {
+        height   : 200px;
+        max-width: 352px;
+    }
+}
+
+.carrousel-mid-vertical {
+    height: 195px;
+}
+
+@media screen and (min-width: 600px) {
+    .carrousel-mid-vertical {
+        max-width: 340px;
+    }
+}
+
+.carrousel-mid-horizontal {
+    flex-basis: auto;
+    width     : 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .carrousel-mid-horizontal {
+        height   : 330px;
+        max-width: 220px;
+    }
+}
+
+.carrousel-small {
+    height    : 160px;
+    flex-basis: auto;
+    max-width : 160px;
+}
+
+@media screen and (min-width: 768px) {
+    .carrousel-small {
+        height   : 222px;
+        max-width: 222px;
+    }
+}
+
 .save-btn {
     background-color: rgb(221, 221, 221);
     box-shadow      : rgba(0, 0, 0, 0.35) 0px 2px 8px;
@@ -120,8 +191,14 @@
     position        : absolute;
     right           : 18px;
     transition      : var(--hm-transition);
+    transform       : scale(1);
     width           : 36px;
     z-index         : 99;
+}
+
+.save-btn:hover {
+    background-color: var(--hm-white);
+    transform       : scale(1.1);
 }
 
 .save-btn img {
