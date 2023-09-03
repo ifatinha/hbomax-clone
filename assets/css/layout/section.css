@@ -1,4 +1,4 @@
-section {
+.section {
     background-position: center center;
     background-size    : cover;
     height             : auto;
@@ -8,7 +8,7 @@ section {
 }
 
 @media screen and (min-width: 998px) {
-    section {
+    .section {
         min-height: 100%;
     }
 }

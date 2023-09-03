@@ -1,0 +1,135 @@
+#f-carrousel {
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.992) 6.67%, rgba(0, 0, 0, 0.965) 13.33%, rgba(0, 0, 0, 0.918) 20%, rgba(0, 0, 0, 0.85) 26.67%, rgba(0, 0, 0, 0.77) 33.33%, rgba(0, 0, 0, 0.667) 40%, rgba(0, 0, 0, 0.557) 46.67%, rgba(0, 0, 0, 0.443) 53.33%, rgba(0, 0, 0, 0.333) 60%, rgba(0, 0, 0, 0.23) 66.67%, rgba(0, 0, 0, 0.15) 73.33%, rgba(0, 0, 0, 0.082) 80%, rgba(0, 0, 0, 0.035) 86.67%, rgba(0, 0, 0, 0.008) 93.33%, rgba(0, 0, 0, 0) 100%);
+    padding         : 36px 2% 0px;
+}
+
+.carrousel {
+    font-family  : var(--hm-font-second);
+    margin-bottom: 36px;
+    overflow-x   : hidden;
+    width        : 100%;
+}
+
+.carrousel-container {
+    display       : var(--hm-display-flex);
+    flex-direction: column;
+    gap           : 15px;
+    max-width     : 1400px;
+    margin        : 0 auto;
+    width         : 100%;
+}
+
+.carrousel-title {
+    font-weight   : 600;
+    font-size     : var(--hm-font-16);
+    line-height   : 20px;
+    letter-spacing: 0;
+}
+
+.carrousel-content {
+    align-items       : center;
+    display           : var(--hm-display-flex);
+    gap               : 12px;
+    justify-items     : center;
+    overflow-y        : hidden;
+    overflow-x        : scroll;
+    scroll-behavior   : smooth;
+    scroll-snap-type  : x mandatory;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width   : none;
+    /** Firefox */
+    transition        : var(--hm-transition);
+}
+
+/* @media screen and (min-width: 998px) {
+    .carrousel-content:hover> :not(:hover) {
+        opacity: 0.6;
+    }
+} */
+
+@media screen and (min-width: 768px) {
+    .carrousel-content::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .carrousel-content::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .carrousel-content::-webkit-scrollbar-thumb {
+        background-color: rgba(166, 154, 154, 0.3);
+        border-radius   : 8px;
+    }
+
+    /*.carrousel-content::-webkit-scrollbar {
+     display: none;
+}*/
+}
+
+.carrousel-card {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius   : 4px;
+    flex            : 0 0 100%;
+    margin-bottom   : 10px;
+    width           : 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .carrousel-card {
+        flex     : 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .carrousel-card {
+        flex     : 0 0 40%;
+        max-width: 40%;
+    }
+}
+
+.carrousel-img {
+    border-radius: 4px;
+    border       : 2px solid transparent;
+    height       : 195px;
+    position     : relative;
+    transition   : var(--hm-transition);
+    width        : 100%;
+}
+
+.carrousel-img:hover {
+    border-color: rgb(117, 62, 239);
+    cursor      : pointer;
+}
+
+.carrousel-img img {
+    border-radius: 4px;
+    height       : 100%;
+    width        : 100%;
+}
+
+.save-btn {
+    background-color: rgb(221, 221, 221);
+    box-shadow      : rgba(0, 0, 0, 0.35) 0px 2px 8px;
+    bottom          : 12px;
+    border-radius   : 50%;
+    display         : inline-block;
+    height          : 36px;
+    opacity         : 0;
+    position        : absolute;
+    right           : 18px;
+    transition      : var(--hm-transition);
+    width           : 36px;
+    z-index         : 99;
+}
+
+.save-btn img {
+    height   : 20px;
+    transform: translate(40%, 40%);
+    width    : 20px;
+}
+
+.carrousel-img:hover .save-btn {
+    opacity: 1;
+}
