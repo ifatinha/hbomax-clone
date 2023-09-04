@@ -235,30 +235,24 @@
 .personagem-img {
     border-radius: 50%;
     inset        : 0;
-    overflow     : hidden;
-    position     : absolute;
-}
-
-.personagem-img {
-    border-radius: 50%;
-}
-
-.personagem-poster {
     opacity      : 1;
+    position     : absolute;
+    overflow     : hidden;
     transition   : var(--hm-transition);
-    /* z-index   : 2; */
+    width        : 100%;
 }
 
-.personagem-poster:hover {
-    cursor : pointer;
+.personagem-img:hover {
     opacity: 0;
 }
 
 .personagem-hover {
-    border       : 2.5px solid transparent;
-    /* opacity   : 0; */
-    transition   : var(--hm-transition);
-    /* z-index   : 5; */
+    border          : 2.5px solid transparent;
+    inset           : 0;
+    opacity         : 0;
+    position        : absolute;
+    transition      : var(--hm-transition);
+    z-index         : 999;
 }
 
 .personagem-hover:hover {
