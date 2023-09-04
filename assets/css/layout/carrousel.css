@@ -210,3 +210,59 @@
 .carrousel-img:hover .save-btn {
     opacity: 1;
 }
+
+.carrousel-personagem {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius   : 50%;
+    overflow        : hidden;
+    position        : relative;
+}
+
+@media screen and (min-width: 998px) {
+    .carrousel-personagem {
+        height   : 212px;
+        max-width: 212px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    .carrousel-personagem {
+        height   : 160px;
+        max-width: 160px;
+    }
+}
+
+.personagem-img {
+    border-radius: 50%;
+    inset        : 0;
+    overflow     : hidden;
+    position     : absolute;
+}
+
+.personagem-img {
+    border-radius: 50%;
+}
+
+.personagem-poster {
+    opacity      : 1;
+    transition   : var(--hm-transition);
+    /* z-index   : 2; */
+}
+
+.personagem-poster:hover {
+    cursor : pointer;
+    opacity: 0;
+}
+
+.personagem-hover {
+    border       : 2.5px solid transparent;
+    /* opacity   : 0; */
+    transition   : var(--hm-transition);
+    /* z-index   : 5; */
+}
+
+.personagem-hover:hover {
+    border-color: rgb(117, 62, 239);
+    cursor      : pointer;
+    opacity     : 1;
+}
