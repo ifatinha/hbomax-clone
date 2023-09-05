@@ -43,13 +43,13 @@
 }
 
 .header-icon {
-    cursor          : pointer;
-    height          : 36px;
-    padding         : 4px;
-    position        : relative;
-    transition      : var(--hm-transition);
-    text-align      : center;
-    width           : 36px;
+    cursor    : pointer;
+    height    : 36px;
+    padding   : 4px;
+    position  : relative;
+    transition: var(--hm-transition);
+    text-align: center;
+    width     : 36px;
 }
 
 .header-icon:hover .sidenav-modal {
@@ -89,8 +89,8 @@
 }
 
 .header-right {
-    justify-content : flex-end;
-    padding-left    : 16px;
+    justify-content: flex-end;
+    padding-left   : 16px;
 }
 
 .header-link {
@@ -135,7 +135,16 @@
     }
 }
 
-.header-profile {
+.profile-menu {
+    background: transparent;
+    position  : relative;
+}
+
+.profile-menu:hover .profile-dropdown {
+    display: block;
+}
+
+.profile-icon {
     align-items    : center;
     color          : rgba(255, 255, 255, 0.7);
     display        : var(--hm-display-flex);
@@ -148,17 +157,11 @@
     transition     : var(--hm-transition);
 }
 
-.header-profile:hover {
+.profile-icon:hover {
     color: var(--hm-white);
 }
 
-@media screen and (min-width: 768px) {
-    .header-profile::after {
-        content: "Jessy";
-    }
-}
-
-.header-profile_img {
+.profile-image {
     background-image: linear-gradient(4.71239rad, rgb(49, 131, 255) 1%, rgb(143, 0, 255) 96%);
     border-radius   : 50%;
     height          : 34px;
@@ -167,16 +170,56 @@
 }
 
 @media screen and (min-width: 768px) {
-    .header-profile_img {
+    .profile-image {
         height : 36px;
         padding: 2%;
         width  : 36px;
     }
 }
 
-.header-profile_img img {
+.profile-image img {
     border-radius: 50%;
 }
 
+.profile-dropdown {
+    background-color: rgb(25, 25, 25);
+    box-shadow      : rgba(0, 0, 0, 0.3) 0px 4px 10px;
+    border-radius   : 4px;
+    display         : none;
+    /* margin-top      : 4px; */
+    min-width       : 150px;
+    padding         : 4px;
+    position        : absolute;
+    right           : 0;
+    top             : 100%;
+    width           : 100%;
+}
+
+.profile-dropdown li {
+    width: 100%;
+}
+
+.profile-dropdown a {
+    border-top   : 2px solid transparent;
+    color        : var(--hm-white);
+    border-radius: 4px;
+    display      : inline-block;
+    font-family  : var(--hm-font-second);
+    font-size    : var(--hm-font-16);
+    font-weight  : 400;
+    line-height  : 22px;
+    padding      : 12px;
+    transition   : var(--hm-transition);
+    width        : 100%;
+}
+
+.profile-dropdown a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.profile-dropdown li:last-of-type a {
+    border-top-color: rgba(255, 255, 255, 0.3);
+    margin-top      : 4px;
+}
 
 /*** end header ***/
