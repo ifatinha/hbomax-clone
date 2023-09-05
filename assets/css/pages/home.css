@@ -1,9 +1,10 @@
 #home {
-    /* background-attachment : fixed; */
-    background-position: center;
-    background-size    : cover;
-    background-repeat  : no-repeat;
-    background-color   : var(--hm-bg-color);
+    background-attachment : fixed;
+    background-position   : 50% 50%;
+    background-size       : cover;
+    background-repeat     : no-repeat;
+    /* background-color   : var(--hm-bg-color); */
+    min-height            : 100%;
 }
 
 @media (orientation: landscape) {
