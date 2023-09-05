@@ -249,6 +249,7 @@
 }
 
 @media screen and (min-width: 700px) {
+
     .banner-desc h2 {
         font-size  : var(--hm-font-28);
         line-height: 32px;
@@ -273,6 +274,62 @@
 }
 
 /*** end article container ***/
+
+/*** start explore-container section ***/
+.explore-container {
+    align-content        : start;
+    display              : grid;
+    grid-template-columns: 1fr;
+    gap                  : 40px;
+    justify-content      : start;
+}
+
+@media screen and (min-width: 998px) {
+    .explore-container {
+        grid-template-columns: 400px auto;
+    }
+}
+
+.explore-desc {
+    align-items   : center;
+    align-self    : center;
+    display       : var(--hm-display-flex);
+    font-family   : var(--hm-font-second);
+    flex-direction: column;
+    justify-self  : center;
+    padding-right : 0px;
+    text-align    : center;
+}
+
+@media screen and (min-width: 998px) {
+    .explore-desc {
+        align-items: start;
+        text-align : left;
+    }
+}
+
+.explore-desc h2 {
+    font-size    : var(--hm-font-28);
+    font-weight  : 600;
+    line-height  : 30px;
+    margin-bottom: 10px;
+}
+
+.explore-desc p {
+    font-size    : var(--hm-font-16);
+    font-weight  : 400;
+    line-height  : 18px;
+    margin-bottom: 40px;
+}
+
+#deductibles {
+    background         : url("../../images/explore-background.png");
+    background-repeat  : no-repeat;
+    background-position: 50% 50%;
+    background-size    : cover;
+}
+
+/*** end explore-container section ***/
 
 /*** footer home container ***/
 .footer-home {

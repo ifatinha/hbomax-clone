@@ -196,7 +196,7 @@
 
 .btn-square-default {
     background-color: rgba(62, 59, 68, 0.7);
-    border          : 1.6px solid var(--hm-black);
+    border          : 1.6px solid transparent;
     border-radius   : 4px;
     color           : var(--hm-white-rgb);
     font-weight     : 600;
