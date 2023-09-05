@@ -1010,7 +1010,7 @@
     width       : 100%;
 }
 
-.poster-houver {
+.poster-hover {
     bottom    : 0;
     left      : 0;
     opacity   : 0;
@@ -1021,13 +1021,13 @@
 }
 
 @media screen and (min-width: 768px) {
-    .universe-card:hover .poster-houver {
+    .universe-card:hover .poster-hover {
         opacity: 1;
     }
 }
 
 @media screen and (max-width: 700px) {
-    .universe-card .poster-houver {
+    .universe-card .poster-hover {
         animation: FadeOutIn 4s infinite;
     }
 }
