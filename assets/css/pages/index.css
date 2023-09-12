@@ -1205,11 +1205,7 @@
 /*** end faq section ***/
 
 /*** start footer index ***/
-.footer-container {
-    width: 100%;
-}
-
-.footer-content {
+.footer-index {
     align-items   : center;
     display       : var(--hm-display-flex);
     flex-direction: column;

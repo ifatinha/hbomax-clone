@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="background-default">
+    <div class="background-default" id="signIn">
         <header class="header-default">
             <div class="header-container">
                 <div class="header-left">
@@ -99,7 +99,7 @@
             <div class="signIn-container">
                 <h1 class="signIn-title">Entrar</h1>
                 <div class="signIn-content">
-                    <form action="#" class="singIn-form" method="get">
+                    <form action="#" class="singIn-form">
                         <p class="signIn-paragraph">Você tem um conta da HBO Max?</p>
                         <div class="signIn-item">
                             <input type="text" name="login" placeholder="Endereço de e-mail" required>
@@ -108,13 +108,11 @@
                             <input type="password" name="password" placeholder="Senha" required>
                             <a href="#" class="form-icon"><i class="fa-regular fa-eye"></i></a>
                         </div>
-                        <div class="signIn-btn">
-                            <button class="btn-square-border">
-                                <a href="profile.html" id="login-btn">Entrar</a>
-                            </button>
-                            <a href="#" class="signIn-link">Esqueceu a senha?</a>
-                        </div>
                     </form>
+                    <div class="signIn-btn">
+                        <a href="profile.html" id="login-btn" class="btn-square-border">Entrar</a>
+                        <a href="#" class="signIn-link">Esqueceu a senha?</a>
+                    </div>
                     <div class="signIn-line">
                         <div class="signIn-underline"></div>
                         <span>Ou</span>
@@ -131,7 +129,6 @@
             </div>
         </main>
     </div>
-
     <script src="./../scripts/script.js"></script>
     <script src="https://kit.fontawesome.com/09fa9cee0a.js" crossorigin="anonymous"></script>
 </body>
