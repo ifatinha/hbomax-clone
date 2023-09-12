@@ -18,6 +18,7 @@
     gap           : 15px;
     max-width     : 1400px;
     margin        : 0 auto;
+    position      : relative;
     width         : 100%;
 }
 
@@ -245,4 +246,9 @@
 .carousel-personagem:hover .personagem-hover {
     cursor : pointer;
     opacity: 1;
+}
+
+#f-carousel .arrow-animated {
+    font-size: var(--hm-font-18);
+    top      : 10px;
 }
