@@ -250,5 +250,6 @@
 
 #f-carousel .arrow-animated {
     font-size: var(--hm-font-18);
+    right    : 10px;
     top      : 10px;
 }
