@@ -12,6 +12,8 @@
 
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <script>document.documentElement.classList += "js "</script>
     <title>HBO Max</title>
 </head>
 
@@ -400,11 +402,10 @@
         <div class="section-header">
             <h2 class="section-title">Alguma pergunta? A gente tem a resposta.</h2>
             <div class="container faq-container">
-                <ul class="faq-list">
+                <ul class="faq-list js-accordion">
                     <li>
-                        <button>
+                        <button class="accordion-btn">
                             O que é HBO Max?
-                            <span class="accordion-menu"></span>
                         </button>
                         <div class="accordion-panel">
                             <p>HBO Max é a nova plataforma de streaming que reúne todo o conteúdo da HBO, além de filmes
@@ -412,9 +413,8 @@
                         </div>
                     </li>
                     <li>
-                        <button>
+                        <button class="accordion-btn">
                             O HBO Max tem teste grátis?
-                            <span class="accordion-menu"></span>
                         </button>
                         <div class="accordion-panel">
                             <p>A HBO Max, juntamente com a maioria dos provedores da HBO Max, não oferecem mais um teste
@@ -424,9 +424,8 @@
                         </div>
                     </li>
                     <li>
-                        <button>
+                        <button class="accordion-btn">
                             Onde posso assistir HBO Max no Brasil?
-                            <span class="accordion-menu"></span>
                         </button>
                         <div class="accordion-panel">
                             <p>No canto superior direito desta página, selecione ENTRAR. Selecione "Entrar com um
@@ -437,9 +436,8 @@
                         </div>
                     </li>
                     <li>
-                        <button>
+                        <button class="accordion-btn">
                             Quanto custa o serviço HBO Max?
-                            <span class="accordion-menu"></span>
                         </button>
                         <div class="accordion-panel">
                             <p>A HBO Max está disponível em <a href="#">vários provedores</a> e os preços variam de
@@ -449,9 +447,8 @@
                         </div>
                     </li>
                     <li>
-                        <button>
+                        <button class="accordion-btn">
                             O que há de novo com HBO Max?
-                            <span class="accordion-menu"></span>
                         </button>
                         <div class="accordion-panel">
                             <p>Todos os meses temos estreias de filmes e séries. Você pode encontrá-los em nossa página
@@ -460,9 +457,8 @@
                         </div>
                     </li>
                     <li>
-                        <button>
+                        <button class="accordion-btn">
                             Quais séries e filmes posso assistir na HBO Max Brasil?
-                            <span class="accordion-menu"></span>
                         </button>
                         <div class="accordion-panel">
                             <p>Nosso streaming possui histórias para todos os públicos. A HBO Max inclui:</p>
@@ -479,9 +475,8 @@
                         </div>
                     </li>
                     <li>
-                        <button>
+                        <button class="accordion-btn">
                             Em quais dispositivos posso assistir a filmes e séries do HBO Max?
-                            <span class="accordion-menu"></span>
                         </button>
                         <div class="accordion-panel">
                             <div class="device-container">
@@ -520,9 +515,8 @@
                         </div>
                     </li>
                     <li>
-                        <button>
+                        <button class="accordion-btn">
                             Tem algum custo extra para assistir HBO Max do meu celular ou tablet?
-                            <span class="accordion-menu"></span>
                         </button>
                         <div class="accordion-panel">
                             <p>Com o plano multitelas, você pode aproveitar todo o catálogo em todas as suas telas,
@@ -530,9 +524,8 @@
                         </div>
                     </li>
                     <li>
-                        <button>
+                        <button class="accordion-btn">
                             A HBO Max tem controle para menores?
-                            <span class="accordion-menu"></span>
                         </button>
                         <div class="accordion-panel">
                             <p>Sim, você pode criar um perfil infantil para cada um de seus filhos, acionando a opção
@@ -540,9 +533,8 @@
                         </div>
                     </li>
                     <li>
-                        <button>
+                        <button class="accordion-btn">
                             Onde ver a casa do dragão no Brasil?
-                            <span class="accordion-menu"></span>
                         </button>
                         <div class="accordion-panel">
                             <p>Novos episódios de House of the Dragon, a tão esperada história pregressa de Game of
@@ -606,6 +598,7 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/09fa9cee0a.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
